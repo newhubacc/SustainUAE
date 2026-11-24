@@ -1,7 +1,0 @@
-Add your generated photographs to the images folder with these exact names (JPG):
-hero.jpg — Dubai green skyline
-conventional.jpg — car-dependent district
-sustainable.jpg — same district redesigned sustainably
-Optional topic photos: environment-1.jpg through environment-6.jpg and communities-1.jpg through communities-6.jpg (in page order).
-Until added, the site uses built-in SVG illustrations for hero and comparison, and hides optional topic photos.
-Open index.html or upload all files and images to GitHub Pages.
