@@ -685,7 +685,7 @@ main {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
-    width: 65%;
+    width: 75%;
     max-width: 800px;
     z-index: 3;
 }
@@ -1006,53 +1006,69 @@ main {
 }
 
 
-/* Fix overlapping hero buttons */
+/* Homepage spacing correction */
 
-.hero.cinema {
-    min-height: 780px;
+body[data-page="index"] .hero.cinema {
+    min-height: 850px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     justify-content: center;
-    gap: 30px;
-    padding-bottom: 30px;
+    align-items: stretch;
+    padding-bottom: 50px;
+    gap: 0;
 }
 
-.hero.cinema .hero-content {
-    width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.hero.cinema .hero-controls {
+body[data-page="index"] .hero-content {
     position: relative;
-    right: auto;
-    left: auto;
-    bottom: auto;
+    width: 100%;
+    max-width: 750px;
+    margin-top: auto;
+    margin-bottom: 70px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+body[data-page="index"] .hero-controls {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
     align-self: flex-end;
     flex-shrink: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    width: 65%;
+    width: 75%;
     max-width: 800px;
     gap: 8px;
-    margin-top: 25px;
+    z-index: 3;
 }
 
-.hero-controls button {
+body[data-page="index"] .hero-controls button {
     min-width: 0;
     padding: 12px 8px;
     font-size: 11px;
     transition: all 0.35s ease;
 }
 
-.hero-controls button span {
+body[data-page="index"] .hero-controls button span {
     font-size: 11px;
     overflow-wrap: anywhere;
 }
 
-.hero-controls button:hover {
+body[data-page="index"] .hero-controls button:hover {
     transform: translateY(-5px);
+}
+
+body[data-page="index"] .scroll-cue {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    align-self: flex-start;
+    margin-top: 10px;
 }
 
 
@@ -1060,40 +1076,43 @@ main {
 
 @media (max-width: 768px) {
 
-    .hero.cinema {
-        min-height: 660px;
-        padding: 24px 12px 20px;
-        gap: 25px;
+    body[data-page="index"] .hero.cinema {
+        min-height: 700px;
+        height: auto;
+        padding: 30px 12px;
     }
 
-    .hero.cinema .hero-content {
+    body[data-page="index"] .hero-content {
+        width: 100%;
         padding: 0 12px;
+        margin-bottom: 40px;
     }
 
-    .hero.cinema .hero-controls {
-        position: relative;
-        left: auto;
-        right: auto;
-        bottom: auto;
+    body[data-page="index"] .hero-controls {
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
         width: 100%;
         max-width: none;
         grid-template-columns: repeat(5, minmax(0, 1fr));
+        margin-top: 0;
+        margin-bottom: 0;
         gap: 5px;
-        margin-top: 20px;
     }
 
-    .hero-controls button {
+    body[data-page="index"] .hero-controls button {
         min-width: 0;
         padding: 10px 4px;
         font-size: 10px;
     }
 
-    .hero-controls button span {
+    body[data-page="index"] .hero-controls button span {
         font-size: 9px;
         overflow-wrap: anywhere;
     }
 
-    .scroll-cue {
+    body[data-page="index"] .scroll-cue {
         display: none;
     }
 
