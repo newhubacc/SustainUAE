@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>Eco Impact Calculator | EcoDubai</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script defer="" src="motion.js"></script>
+</head>
+
+<body data-page="calculator">
+
+    <header>
+        <nav aria-label="Main navigation">
+            <a class="brand" href="index.html">Eco<span>Dubai.</span></a>
+            <a href="index.html">Home</a>
+            <a href="environment.html">Environment</a>
+            <a href="communities.html">Communities</a>
+            <a aria-current="page" href="calculator.html">Eco Calculator</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="eyebrow">Interactive self-assessment</div>
+
+        <h1>Eco Impact Calculator</h1>
+
+        <p class="lead">
+            Select the habits you already practise. Each habit earns one point.
+        </p>
+
+        <div class="calc">
+
+            <section class="tile" style="margin:0">
+
+                <h2>Your everyday habits</h2>
+
+                <label class="habit">
+                    <input type="checkbox" value="0"/>Use public transport or carpool
+                </label>
+
+                <label class="habit">
+                    <input type="checkbox" value="1"/>Separate recyclable waste
+                </label>
+
+                <label class="habit">
+                    <input type="checkbox" value="2"/>Reduce water consumption
+                </label>
+
+                <label class="habit">
+                    <input type="checkbox" value="3"/>Use energy-efficient appliances
+                </label>
+
+                <label class="habit">
+                    <input type="checkbox" value="4"/>Avoid single-use plastics
+                </label>
+
+                <label class="habit">
+                    <input type="checkbox" value="5"/>Join community sustainability activities
+                </label>
+
+                <p>
+                    <button class="btn secondary" id="reset">Reset assessment</button>
+                </p>
+
+            </section>
+
+            <section aria-live="polite" class="tile result" style="margin:0">
+
+                <div class="tag">YOUR ECO SCORE</div>
+
+                <div class="score" id="score">0%</div>
+
+                <div class="track">
+                    <div id="bar" style="width:0%"></div>
+                </div>
+
+                <h3 id="level">Room to improve</h3>
+
+                <p id="count"></p>
+
+                <h3>Personal recommendations</h3>
+
+                <ul id="tips"></ul>
+
+            </section>
+
+        </div>
+
+        <p class="fact">
+            Score = selected habits ÷ 6 × 100, rounded to the nearest whole percent. This is an illustrative habit-based score, not a scientifically measured carbon footprint.
+        </p>
+
+        <script>
+
+            const tips = [
+                "Try the metro or carpooling.",
+                "Separate paper, plastic and glass according to local rules.",
+                "Shorten showers and fix leaks.",
+                "Choose efficient appliances.",
+                "Carry reusable bags and bottles.",
+                "Participate in a local initiative."
+            ];
+
+            const boxes = [...document.querySelectorAll("input[type=checkbox]")];
+
+            function update() {
+
+                const n = boxes.filter(b => b.checked).length,
+                      s = Math.round(n / 6 * 100);
+
+                document.getElementById("score").textContent = s + "%";
+
+                document.getElementById("bar").style.width = s + "%";
+
+                document.getElementById("level").textContent =
+                    s < 50 ? "Room to improve" :
+                    s < 83 ? "Making progress" : "Eco Champion";
+
+                document.getElementById("count").textContent = n + " of 6 habits selected";
+
+                const list = document.getElementById("tips");
+
+                list.replaceChildren();
+
+                boxes.forEach((b, i) => {
+
+                    if (!b.checked) {
+
+                        const li = document.createElement("li");
+
+                        li.textContent = tips[i];
+
+                        list.append(li)
+
+                    }
+
+                });
+
+                if (n === 6) {
+
+                    const li = document.createElement("li");
+
+                    li.textContent = "Excellent! Keep practising your habits and encourage others.";
+
+                    list.append(li)
+
+                }
+
+            }
+
+            boxes.forEach(b => b.addEventListener("change", update));
+
+            document.getElementById("reset").onclick = () => {
+
+                boxes.forEach(b => b.checked = false);
+
+                update()
+
+            };
+
+            update();
+
+        </script>
+
+    </main>
+
+    <footer>
+        EcoDubai · Your Actions. Our Future.<br/>
+        Educational project • <a href="references.html">Sources &amp; credits</a>
+    </footer>
+
+</body>
+
+</html>
