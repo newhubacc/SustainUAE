@@ -1,115 +1,571 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width,initial-scale=1" name="viewport"/>
+
     <title>References | EcoDubai</title>
+
     <link href="style.css" rel="stylesheet"/>
-    <script defer="" src="motion.js"></script>
+
+    <script defer src="motion.js"></script>
+    <script defer src="language.js"></script>
 </head>
 
 <body data-page="references">
 
     <header>
+
         <nav aria-label="Main navigation">
+
             <a class="brand" href="index.html">Eco<span>Dubai.</span></a>
-            <a href="index.html">Home</a>
-            <a href="environment.html">Environment</a>
-            <a href="communities.html">Communities</a>
-            <a href="calculator.html">Eco Calculator</a>
-            <a aria-current="page" href="references.html">References</a>
+
+            <a href="index.html"
+               data-en="Home"
+               data-ar="الرئيسية">Home</a>
+
+            <a href="environment.html"
+               data-en="Environment"
+               data-ar="البيئة">Environment</a>
+
+            <a href="communities.html"
+               data-en="Communities"
+               data-ar="المجتمعات">Communities</a>
+
+            <a href="calculator.html"
+               data-en="Eco Calculator"
+               data-ar="حاسبة الاستدامة">Eco Calculator</a>
+
+            <a aria-current="page" href="references.html"
+               data-en="References"
+               data-ar="المراجع">References</a>
+
+            <button class="language-toggle"
+                    id="language-toggle"
+                    type="button">
+                🌐 العربية
+            </button>
+
         </nav>
+
     </header>
 
     <main>
 
-        <div class="eyebrow">Evidence and further reading</div>
+        <div class="eyebrow"
+             data-en="Evidence and further reading"
+             data-ar="الأدلة والقراءات الإضافية">
 
-        <h1>References</h1>
+            Evidence and further reading
 
-        <p class="lead">
-            Official government and scientific sources used throughout EcoDubai. Numbered citations on topic cards link here.
+        </div>
+
+        <h1 data-en="References"
+            data-ar="المراجع">
+
+            References
+
+        </h1>
+
+        <p class="lead"
+           data-en="Official government, scientific and institutional sources supporting the statistics, case studies and sustainability concepts presented throughout EcoDubai."
+           data-ar="المصادر الحكومية والعلمية والمؤسسية الرسمية التي تدعم الإحصائيات ودراسات الحالة ومفاهيم الاستدامة المقدمة في موقع EcoDubai.">
+
+            Official government, scientific and institutional sources
+            supporting the statistics, case studies and sustainability
+            concepts presented throughout EcoDubai.
+
         </p>
+
+
+        <!-- Original References -->
 
         <div class="ref" id="r1">
 
-            <b>[1] IPCC • Climate Change 2023: Synthesis Report</b><br/>
+            <b data-en="[1] IPCC • Climate Change 2023: Synthesis Report"
+               data-ar="[1] الهيئة الحكومية الدولية المعنية بتغير المناخ • التقرير التجميعي لتغير المناخ 2023">
 
-            <a href="https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [1] IPCC • Climate Change 2023: Synthesis Report
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
 
         <div class="ref" id="r2">
 
-            <b>[2] UAE Government • Dubai 2040 Urban Master Plan</b><br/>
+            <b data-en="[2] UAE Government • Dubai 2040 Urban Master Plan"
+               data-ar="[2] حكومة دولة الإمارات • خطة دبي الحضرية 2040">
 
-            <a href="https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/transport-and-infrastructure/dubai-2040-urban-master-plan" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [2] UAE Government • Dubai 2040 Urban Master Plan
+
+            </b>
+
+            <br/>
+
+            <a href="https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/strategies-plans-and-visions/transport-and-infrastructure/dubai-2040-urban-master-plan"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
 
         <div class="ref" id="r3">
 
-            <b>[3] DEWA • Mohammed bin Rashid Al Maktoum Solar Park</b><br/>
+            <b data-en="[3] DEWA • Mohammed bin Rashid Al Maktoum Solar Park"
+               data-ar="[3] هيئة كهرباء ومياه دبي • مجمع محمد بن راشد آل مكتوم للطاقة الشمسية">
 
-            <a href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/mbr-solar-park" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [3] DEWA • Mohammed bin Rashid Al Maktoum Solar Park
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.dewa.gov.ae/en/about-us/strategic-initiatives/mbr-solar-park"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
 
         <div class="ref" id="r4">
 
-            <b>[4] Dubai Government • Environment and Sustainability</b><br/>
+            <b data-en="[4] Dubai Government • Environment and Sustainability"
+               data-ar="[4] حكومة دبي • البيئة والاستدامة">
 
-            <a href="https://www.dubai.ae/web/dubai.ae/environment-sustainability" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [4] Dubai Government • Environment and Sustainability
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.dubai.ae/web/dubai.ae/environment-sustainability"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
 
         <div class="ref" id="r5">
 
-            <b>[5] Dubai Government • Waste Management</b><br/>
+            <b data-en="[5] Dubai Government • Waste Management"
+               data-ar="[5] حكومة دبي • إدارة النفايات">
 
-            <a href="https://www.dubai.ae/web/dubai.ae/living/environment-sustainability/waste-management" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [5] Dubai Government • Waste Management
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.dubai.ae/web/dubai.ae/living/environment-sustainability/waste-management"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
 
         <div class="ref" id="r6">
 
-            <b>[6] Dubai DET • Sustainability initiatives</b><br/>
+            <b data-en="[6] Dubai DET • Sustainability Initiatives"
+               data-ar="[6] دائرة الاقتصاد والسياحة بدبي • مبادرات الاستدامة">
 
-            <a href="https://www.dubaidet.gov.ae/en/about-det/initiatives" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [6] Dubai DET • Sustainability Initiatives
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.dubaidet.gov.ae/en/about-det/initiatives"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
 
         <div class="ref" id="r7">
 
-            <b>[7] IPCC • Urban systems and settlements</b><br/>
+            <b data-en="[7] IPCC • Urban Systems and Other Settlements (2022)"
+               data-ar="[7] الهيئة الحكومية الدولية المعنية بتغير المناخ • النظم الحضرية والمستوطنات البشرية (2022)">
 
-            <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-8/" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [7] IPCC • Urban Systems and Other Settlements (2022)
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-8/"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
 
         <div class="ref" id="r8">
 
-            <b>[8] IPCC • Physical science of climate, Chapter 10</b><br/>
+            <b data-en="[8] IPCC • Physical Science of Climate, Chapter 10 (2021)"
+               data-ar="[8] الهيئة الحكومية الدولية المعنية بتغير المناخ • الأساس العلمي الفيزيائي للمناخ، الفصل العاشر (2021)">
 
-            <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-10/" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [8] IPCC • Physical Science of Climate, Chapter 10 (2021)
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-10/"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
 
         <div class="ref" id="r9">
 
-            <b>[9] IPCC • Synthesis longer report</b><br/>
+            <b data-en="[9] IPCC • Climate Change 2023: Longer Report"
+               data-ar="[9] الهيئة الحكومية الدولية المعنية بتغير المناخ • التقرير المفصل لتغير المناخ 2023">
 
-            <a href="https://www.ipcc.ch/report/ar6/syr/longer-report/" rel="noopener noreferrer" target="_blank">Read source ↗</a>
+                [9] IPCC • Climate Change 2023: Longer Report
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.ipcc.ch/report/ar6/syr/longer-report/"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
 
         </div>
+
+
+        <!-- Additional References -->
+
+        <div class="ref" id="r10">
+
+            <b data-en="[10] DEWA • Carbon Emission Reductions and Production Efficiency (2025)"
+               data-ar="[10] هيئة كهرباء ومياه دبي • خفض الانبعاثات الكربونية وتحسين كفاءة الإنتاج (2025)">
+
+                [10] DEWA • Carbon Emission Reductions and Production Efficiency (2025)
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2025/04/dewa-reduces-carbon-emissions"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r11">
+
+            <b data-en="[11] DEWA • Dubai Demand Side Management Strategy 2050 (2024)"
+               data-ar="[11] هيئة كهرباء ومياه دبي • استراتيجية إدارة الطلب في دبي 2050 (2024)">
+
+                [11] DEWA • Dubai Demand Side Management Strategy 2050 (2024)
+
+            </b>
+
+            <br/>
+
+            <a href="https://dewa.gov.ae/en/about-us/media-publications/latest-news/2024/07/hh-sheikh-ahmed-bin-saeed-al-maktoum-issues"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r12">
+
+            <b data-en="[12] DEWA • Solar Park Production Capacity, WETEX (2024)"
+               data-ar="[12] هيئة كهرباء ومياه دبي • القدرة الإنتاجية لمجمع الطاقة الشمسية، ويتيكس (2024)">
+
+                [12] DEWA • Solar Park Production Capacity, WETEX (2024)
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2024/09/wetex-2024-brings-together-companies-that-support"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r13">
+
+            <b data-en="[13] Dubai Municipality • Warsan Waste-to-Energy Centre (2025)"
+               data-ar="[13] بلدية دبي • مركز تحويل النفايات إلى طاقة في ورسان (2025)">
+
+                [13] Dubai Municipality • Warsan Waste-to-Energy Centre (2025)
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.dm.gov.ae/flagship-sustainable-infrastructure-projects-at-wetex-2025/"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r14">
+
+            <b data-en="[14] Environment Agency – Abu Dhabi • Ghars Al Emarat Mangrove Initiative (2024)"
+               data-ar="[14] هيئة البيئة – أبوظبي • مبادرة غرس الإمارات لأشجار القرم (2024)">
+
+                [14] Environment Agency – Abu Dhabi • Ghars Al Emarat Mangrove Initiative (2024)
+
+            </b>
+
+            <br/>
+
+            <a href="https://ead.gov.ae/en/Media-Centre/News/EAD-Plants-10-Mangrove-Trees-2024"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r15">
+
+            <b data-en="[15] RTA • Public Transport and Dubai Metro Statistics (2024 data)"
+               data-ar="[15] هيئة الطرق والمواصلات • إحصائيات النقل العام ومترو دبي (بيانات 2024)">
+
+                [15] RTA • Public Transport and Dubai Metro Statistics (2024 data)
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.rta.ae/wps/portal/rta/ae/home/news-and-media/all-news/NewsDetails/747-million-riders-used-public-transport-shared-mobility-and-taxis-in-2024"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r16">
+
+            <b data-en="[16] IPCC • Climate Change Mitigation: Buildings (2022)"
+               data-ar="[16] الهيئة الحكومية الدولية المعنية بتغير المناخ • التخفيف من التغير المناخي: المباني (2022)">
+
+                [16] IPCC • Climate Change Mitigation: Buildings (2022)
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-9/"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r17">
+
+            <b data-en="[17] Dubai Municipality • Waste Management and Recycling"
+               data-ar="[17] بلدية دبي • إدارة النفايات وإعادة التدوير">
+
+                [17] Dubai Municipality • Waste Management and Recycling
+
+            </b>
+
+            <br/>
+
+            <a href="https://www.dm.gov.ae/municipality-business/waste-department-2/"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r18">
+
+            <b data-en="[18] Masdar City • Sustainable Urban Development"
+               data-ar="[18] مدينة مصدر • التنمية الحضرية المستدامة">
+
+                [18] Masdar City • Sustainable Urban Development
+
+            </b>
+
+            <br/>
+
+            <a href="https://masdarcity.ae/en"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+        <div class="ref" id="r19">
+
+            <b data-en="[19] United Nations • Sustainable Development Goals"
+               data-ar="[19] الأمم المتحدة • أهداف التنمية المستدامة">
+
+                [19] United Nations • Sustainable Development Goals
+
+            </b>
+
+            <br/>
+
+            <a href="https://sdgs.un.org/goals"
+               rel="noopener noreferrer"
+               target="_blank"
+               data-en="Read source ↗"
+               data-ar="اطلع على المصدر ↗">
+
+                Read source ↗
+
+            </a>
+
+        </div>
+
+
+        <!-- Short Academic Note -->
+
+        <p class="fact"
+           data-en="Statistics are presented with their original reporting years. Future sustainability targets are distinguished from reported achievements. The calculator is an educational self-assessment, and comparison images are conceptual illustrations."
+           data-ar="تعرض الإحصائيات مع سنواتها الأصلية، ويتم التمييز بين أهداف الاستدامة المستقبلية والإنجازات المعلنة. الحاسبة أداة تقييم ذاتي تعليمية، وصور المقارنة تصورات توضيحية.">
+
+            Statistics are presented with their original reporting years.
+            Future sustainability targets are distinguished from reported
+            achievements. The calculator is an educational self-assessment,
+            and comparison images are conceptual illustrations.
+
+        </p>
 
     </main>
 
     <footer>
-        EcoDubai · Your Actions. Our Future.<br/>
-        Educational project • <a href="references.html">Sources &amp; credits</a>
+
+        <span data-en="EcoDubai · Your Actions. Our Future."
+              data-ar="EcoDubai · أفعالك اليوم. مستقبلنا غداً.">
+
+            EcoDubai · Your Actions. Our Future.
+
+        </span>
+
+        <br/>
+
+        <span data-en="Educational project"
+              data-ar="مشروع تعليمي">
+
+            Educational project
+
+        </span>
+
+        •
+
+        <a href="references.html"
+           data-en="Sources &amp; credits"
+           data-ar="المصادر والمراجع">
+
+            Sources &amp; credits
+
+        </a>
+
     </footer>
 
 </body>
