@@ -10,8 +10,8 @@
 
     <link href="style.css" rel="stylesheet"/>
 
-    <script defer="" src="motion.js"></script>
-    <script defer="" src="language.js"></script>
+    <script defer src="motion.js"></script>
+    <script defer src="language.js"></script>
 </head>
 
 <body data-page="calculator">
@@ -43,7 +43,9 @@
                data-en="References"
                data-ar="المراجع">References</a>
 
-            <button class="language-toggle" id="language-toggle" type="button">
+            <button class="language-toggle"
+                    id="language-toggle"
+                    type="button">
                 🌐 العربية
             </button>
 
@@ -69,1103 +71,471 @@
         </h1>
 
         <p class="lead"
-           data-en="Discover how your everyday habits contribute to environmental, economic and social sustainability. Select the habits you regularly practise."
-           data-ar="اكتشف كيف تساهم عاداتك اليومية في تحقيق الاستدامة البيئية والاقتصادية والاجتماعية. اختر العادات التي تمارسها بانتظام.">
+           data-en="Select the habits you regularly practise to evaluate your environmental, economic and social sustainability."
+           data-ar="اختر العادات التي تمارسها بانتظام لتقييم استدامتك البيئية والاقتصادية والاجتماعية.">
 
-            Discover how your everyday habits contribute to environmental, economic and social sustainability. Select the habits you regularly practise.
+            Select the habits you regularly practise to evaluate your
+            environmental, economic and social sustainability.
 
         </p>
 
+        <div class="calc" id="assessment">
 
-        <!-- Sustainability Categories -->
+            <section class="tile" style="margin:0">
 
-        <div class="grid">
+                <h2 data-en="Your everyday habits"
+                    data-ar="عاداتك اليومية">
 
-            <article class="tile">
+                    Your everyday habits
 
-                <div class="symbol">🌿</div>
+                </h2>
 
-                <h3 data-en="Environmental Sustainability"
-                    data-ar="الاستدامة البيئية">
 
-                    Environmental Sustainability
+                <!-- Environmental Habits -->
 
-                </h3>
+                <div class="habit-category">
 
-                <p data-en="Protect natural resources, reduce pollution and minimise environmental impacts."
-                   data-ar="حماية الموارد الطبيعية والحد من التلوث وتقليل الآثار البيئية.">
+                    <h3 data-en="🌿 Environmental habits"
+                        data-ar="🌿 العادات البيئية">
 
-                    Protect natural resources, reduce pollution and minimise environmental impacts.
+                        🌿 Environmental habits
+
+                    </h3>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="0"
+                               data-category="environmental"/>
+
+                        <span data-en="Separate recyclable waste"
+                              data-ar="أفرز النفايات القابلة لإعادة التدوير">
+
+                            Separate recyclable waste
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="1"
+                               data-category="environmental"/>
+
+                        <span data-en="Reduce water consumption"
+                              data-ar="أرشد استهلاك المياه">
+
+                            Reduce water consumption
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="2"
+                               data-category="environmental"/>
+
+                        <span data-en="Avoid single-use plastics"
+                              data-ar="أتجنب البلاستيك أحادي الاستخدام">
+
+                            Avoid single-use plastics
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="3"
+                               data-category="environmental"/>
+
+                        <span data-en="Switch off unused lights and devices"
+                              data-ar="أطفئ الإضاءة والأجهزة غير المستخدمة">
+
+                            Switch off unused lights and devices
+
+                        </span>
+
+                    </label>
+
+                    <p class="compare-note"
+                       data-en="Related SDGs: 6, 7, 12 and 13"
+                       data-ar="أهداف التنمية المستدامة المرتبطة: 6، 7، 12، 13">
+
+                        Related SDGs: 6, 7, 12 and 13
+
+                    </p>
+
+                </div>
+
+
+                <!-- Economic Habits -->
+
+                <div class="habit-category">
+
+                    <h3 data-en="📈 Economic habits"
+                        data-ar="📈 العادات الاقتصادية">
+
+                        📈 Economic habits
+
+                    </h3>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="4"
+                               data-category="economic"/>
+
+                        <span data-en="Use energy-efficient appliances"
+                              data-ar="أستخدم الأجهزة الموفرة للطاقة">
+
+                            Use energy-efficient appliances
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="5"
+                               data-category="economic"/>
+
+                        <span data-en="Reduce unnecessary purchases"
+                              data-ar="أقلل المشتريات غير الضرورية">
+
+                            Reduce unnecessary purchases
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="6"
+                               data-category="economic"/>
+
+                        <span data-en="Repair and reuse products"
+                              data-ar="أصلح المنتجات وأعيد استخدامها">
+
+                            Repair and reuse products
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="7"
+                               data-category="economic"/>
+
+                        <span data-en="Plan meals to reduce food waste"
+                              data-ar="أخطط للوجبات لتقليل هدر الطعام">
+
+                            Plan meals to reduce food waste
+
+                        </span>
+
+                    </label>
+
+                    <p class="compare-note"
+                       data-en="Related SDGs: 7 and 12"
+                       data-ar="أهداف التنمية المستدامة المرتبطة: 7، 12">
+
+                        Related SDGs: 7 and 12
+
+                    </p>
+
+                </div>
+
+
+                <!-- Social Habits -->
+
+                <div class="habit-category">
+
+                    <h3 data-en="🤝 Social habits"
+                        data-ar="🤝 العادات الاجتماعية">
+
+                        🤝 Social habits
+
+                    </h3>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="8"
+                               data-category="social"/>
+
+                        <span data-en="Use public transport or carpool when practical"
+                              data-ar="أستخدم النقل العام أو أشارك السيارة مع الآخرين عندما يكون ذلك ممكناً">
+
+                            Use public transport or carpool when practical
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="9"
+                               data-category="social"/>
+
+                        <span data-en="Join community sustainability activities"
+                              data-ar="أشارك في أنشطة الاستدامة المجتمعية">
+
+                            Join community sustainability activities
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="10"
+                               data-category="social"/>
+
+                        <span data-en="Encourage others to practise sustainable habits"
+                              data-ar="أشجع الآخرين على ممارسة العادات المستدامة">
+
+                            Encourage others to practise sustainable habits
+
+                        </span>
+
+                    </label>
+
+                    <label class="habit">
+
+                        <input type="checkbox"
+                               value="11"
+                               data-category="social"/>
+
+                        <span data-en="Protect parks and shared public spaces"
+                              data-ar="أحافظ على الحدائق والأماكن العامة المشتركة">
+
+                            Protect parks and shared public spaces
+
+                        </span>
+
+                    </label>
+
+                    <p class="compare-note"
+                       data-en="Related SDGs: 3, 11 and 17"
+                       data-ar="أهداف التنمية المستدامة المرتبطة: 3، 11، 17">
+
+                        Related SDGs: 3, 11 and 17
+
+                    </p>
+
+                </div>
+
+
+                <!-- Reset Button -->
+
+                <p>
+
+                    <button class="btn secondary"
+                            id="reset"
+                            type="button"
+                            data-en="Reset assessment"
+                            data-ar="إعادة ضبط التقييم">
+
+                        Reset assessment
+
+                    </button>
 
                 </p>
 
-                <span class="tag"
-                      data-en="4 sustainability habits"
-                      data-ar="4 عادات مستدامة">
+            </section>
 
-                    4 sustainability habits
 
-                </span>
+            <!-- Results -->
 
-            </article>
+            <section aria-live="polite"
+                     class="tile result"
+                     style="margin:0">
 
-            <article class="tile">
+                <div class="tag"
+                     data-en="YOUR ECO SCORE"
+                     data-ar="درجة استدامتك">
 
-                <div class="symbol">📈</div>
+                    YOUR ECO SCORE
 
-                <h3 data-en="Economic Sustainability"
-                    data-ar="الاستدامة الاقتصادية">
+                </div>
 
-                    Economic Sustainability
+                <div class="score" id="score">0%</div>
+
+                <div class="track">
+
+                    <div id="bar" style="width:0%"></div>
+
+                </div>
+
+                <h3 id="level">Room to improve</h3>
+
+                <p id="count"></p>
+
+
+                <!-- Individual Scores -->
+
+                <div class="category-results">
+
+                    <h3 data-en="Sustainability Breakdown"
+                        data-ar="نتائج فئات الاستدامة">
+
+                        Sustainability Breakdown
+
+                    </h3>
+
+
+                    <!-- Environmental Score -->
+
+                    <div class="category-score">
+
+                        <div class="category-score-header">
+
+                            <span data-en="🌿 Environmental"
+                                  data-ar="🌿 الاستدامة البيئية">
+
+                                🌿 Environmental
+
+                            </span>
+
+                            <strong id="environmental-score">0%</strong>
+
+                        </div>
+
+                        <div class="track">
+
+                            <div id="environmental-bar"
+                                 style="width:0%;background:#91d86b">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Economic Score -->
+
+                    <div class="category-score">
+
+                        <div class="category-score-header">
+
+                            <span data-en="📈 Economic"
+                                  data-ar="📈 الاستدامة الاقتصادية">
+
+                                📈 Economic
+
+                            </span>
+
+                            <strong id="economic-score">0%</strong>
+
+                        </div>
+
+                        <div class="track">
+
+                            <div id="economic-bar"
+                                 style="width:0%;background:#eacb67">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Social Score -->
+
+                    <div class="category-score">
+
+                        <div class="category-score-header">
+
+                            <span data-en="🤝 Social"
+                                  data-ar="🤝 الاستدامة الاجتماعية">
+
+                                🤝 Social
+
+                            </span>
+
+                            <strong id="social-score">0%</strong>
+
+                        </div>
+
+                        <div class="track">
+
+                            <div id="social-bar"
+                                 style="width:0%;background:#78c9da">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Recommendations -->
+
+                <h3 data-en="Personal recommendations"
+                    data-ar="التوصيات الشخصية">
+
+                    Personal recommendations
 
                 </h3>
 
-                <p data-en="Use resources efficiently, reduce unnecessary expenses and support responsible consumption."
-                   data-ar="استخدام الموارد بكفاءة وتقليل النفقات غير الضرورية ودعم الاستهلاك المسؤول.">
+                <ul id="tips"></ul>
 
-                    Use resources efficiently, reduce unnecessary expenses and support responsible consumption.
-
-                </p>
-
-                <span class="tag"
-                      data-en="4 sustainability habits"
-                      data-ar="4 عادات مستدامة">
-
-                    4 sustainability habits
-
-                </span>
-
-            </article>
-
-            <article class="tile">
-
-                <div class="symbol">🤝</div>
-
-                <h3 data-en="Social Sustainability"
-                    data-ar="الاستدامة الاجتماعية">
-
-                    Social Sustainability
-
-                </h3>
-
-                <p data-en="Encourage community participation, social responsibility and improved quality of life."
-                   data-ar="تشجيع المشاركة المجتمعية والمسؤولية الاجتماعية وتحسين جودة الحياة.">
-
-                    Encourage community participation, social responsibility and improved quality of life.
-
-                </p>
-
-                <span class="tag"
-                      data-en="4 sustainability habits"
-                      data-ar="4 عادات مستدامة">
-
-                    4 sustainability habits
-
-                </span>
-
-            </article>
+            </section>
 
         </div>
 
 
-        <!-- Interactive Calculator -->
+        <!-- Short Scoring Methodology -->
 
-        <section id="assessment">
+        <div class="fact" style="margin-top:24px">
 
-            <div class="eyebrow"
-                 data-en="Understand your impact"
-                 data-ar="تعرف على أثر عاداتك">
+            <b data-en="How is your score calculated?"
+               data-ar="كيف يتم احتساب درجة استدامتك؟">
 
-                Understand your impact
+                How is your score calculated?
 
-            </div>
+            </b>
 
-            <h2 data-en="Evaluate Your Sustainability Habits"
-                data-ar="قيم عاداتك المتعلقة بالاستدامة">
+            <p data-en="Overall score = selected habits ÷ 12 × 100. Category score = selected habits ÷ 4 × 100. Each habit earns one point."
+               data-ar="الدرجة الإجمالية = عدد العادات المختارة ÷ 12 × 100. درجة الفئة = عدد العادات المختارة ÷ 4 × 100. تحصل كل عادة مختارة على نقطة واحدة.">
 
-                Evaluate Your Sustainability Habits
-
-            </h2>
-
-            <div class="calc">
-
-                <section class="tile" style="margin:0">
-
-                    <h2 data-en="Your everyday habits"
-                        data-ar="عاداتك اليومية">
-
-                        Your everyday habits
-
-                    </h2>
-
-                    <p data-en="Select each habit that you regularly practise. Your results will update automatically."
-                       data-ar="اختر كل عادة تمارسها بانتظام، وسيتم تحديث نتائجك تلقائياً.">
-
-                        Select each habit that you regularly practise. Your results will update automatically.
-
-                    </p>
-
-
-                    <!-- Environmental Habits -->
-
-                    <div class="habit-category">
-
-                        <h3 data-en="🌿 Environmental habits"
-                            data-ar="🌿 العادات البيئية">
-
-                            🌿 Environmental habits
-
-                        </h3>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="0"
-                                   data-category="environmental"/>
-
-                            <span data-en="Separate recyclable waste"
-                                  data-ar="أفرز النفايات القابلة لإعادة التدوير">
-
-                                Separate recyclable waste
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="1"
-                                   data-category="environmental"/>
-
-                            <span data-en="Reduce water consumption"
-                                  data-ar="أرشد استهلاك المياه">
-
-                                Reduce water consumption
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="2"
-                                   data-category="environmental"/>
-
-                            <span data-en="Avoid single-use plastics"
-                                  data-ar="أتجنب المنتجات البلاستيكية أحادية الاستخدام">
-
-                                Avoid single-use plastics
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="3"
-                                   data-category="environmental"/>
-
-                            <span data-en="Switch off unused lights and electrical devices"
-                                  data-ar="أطفئ الإضاءة والأجهزة الكهربائية غير المستخدمة">
-
-                                Switch off unused lights and electrical devices
-
-                            </span>
-
-                        </label>
-
-                        <p class="compare-note"
-                           data-en="Related SDGs: 6, 7, 12 and 13"
-                           data-ar="أهداف التنمية المستدامة المرتبطة: 6، 7، 12، 13">
-
-                            Related SDGs: 6, 7, 12 and 13
-
-                        </p>
-
-                    </div>
-
-
-                    <!-- Economic Habits -->
-
-                    <div class="habit-category">
-
-                        <h3 data-en="📈 Economic habits"
-                            data-ar="📈 العادات الاقتصادية">
-
-                            📈 Economic habits
-
-                        </h3>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="4"
-                                   data-category="economic"/>
-
-                            <span data-en="Use energy-efficient appliances"
-                                  data-ar="أستخدم الأجهزة الموفرة للطاقة">
-
-                                Use energy-efficient appliances
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="5"
-                                   data-category="economic"/>
-
-                            <span data-en="Reduce unnecessary purchases"
-                                  data-ar="أقلل المشتريات غير الضرورية">
-
-                                Reduce unnecessary purchases
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="6"
-                                   data-category="economic"/>
-
-                            <span data-en="Repair and reuse products instead of replacing them"
-                                  data-ar="أصلح المنتجات وأعيد استخدامها بدلاً من استبدالها">
-
-                                Repair and reuse products instead of replacing them
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="7"
-                                   data-category="economic"/>
-
-                            <span data-en="Plan purchases and meals to reduce food waste"
-                                  data-ar="أخطط للمشتريات والوجبات لتقليل هدر الطعام">
-
-                                Plan purchases and meals to reduce food waste
-
-                            </span>
-
-                        </label>
-
-                        <p class="compare-note"
-                           data-en="Related SDGs: 7, 8 and 12"
-                           data-ar="أهداف التنمية المستدامة المرتبطة: 7، 8، 12">
-
-                            Related SDGs: 7, 8 and 12
-
-                        </p>
-
-                    </div>
-
-
-                    <!-- Social Habits -->
-
-                    <div class="habit-category">
-
-                        <h3 data-en="🤝 Social habits"
-                            data-ar="🤝 العادات الاجتماعية">
-
-                            🤝 Social habits
-
-                        </h3>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="8"
-                                   data-category="social"/>
-
-                            <span data-en="Use public transport or carpool when practical"
-                                  data-ar="أستخدم وسائل النقل العام أو أشارك السيارة مع الآخرين عندما يكون ذلك ممكناً">
-
-                                Use public transport or carpool when practical
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="9"
-                                   data-category="social"/>
-
-                            <span data-en="Join community sustainability activities"
-                                  data-ar="أشارك في أنشطة الاستدامة المجتمعية">
-
-                                Join community sustainability activities
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="10"
-                                   data-category="social"/>
-
-                            <span data-en="Encourage family and friends to practise sustainable habits"
-                                  data-ar="أشجع أفراد الأسرة والأصدقاء على ممارسة العادات المستدامة">
-
-                                Encourage family and friends to practise sustainable habits
-
-                            </span>
-
-                        </label>
-
-                        <label class="habit">
-
-                            <input type="checkbox"
-                                   value="11"
-                                   data-category="social"/>
-
-                            <span data-en="Respect public parks, green spaces and shared community facilities"
-                                  data-ar="أحافظ على الحدائق العامة والمساحات الخضراء والمرافق المجتمعية المشتركة">
-
-                                Respect public parks, green spaces and shared community facilities
-
-                            </span>
-
-                        </label>
-
-                        <p class="compare-note"
-                           data-en="Related SDGs: 3, 11 and 17"
-                           data-ar="أهداف التنمية المستدامة المرتبطة: 3، 11، 17">
-
-                            Related SDGs: 3, 11 and 17
-
-                        </p>
-
-                    </div>
-
-
-                    <!-- Reset Button -->
-
-                    <p>
-
-                        <button class="btn secondary"
-                                id="reset"
-                                type="button"
-                                data-en="Reset assessment"
-                                data-ar="إعادة ضبط التقييم">
-
-                            Reset assessment
-
-                        </button>
-
-                    </p>
-
-                </section>
-
-
-                <!-- Calculator Results -->
-
-                <section aria-live="polite"
-                         class="tile result"
-                         style="margin:0">
-
-                    <div class="tag"
-                         data-en="YOUR ECO SCORE"
-                         data-ar="درجة استدامتك">
-
-                        YOUR ECO SCORE
-
-                    </div>
-
-                    <div class="score" id="score">0%</div>
-
-                    <div class="track">
-
-                        <div id="bar" style="width:0%"></div>
-
-                    </div>
-
-                    <h3 id="level">Room to improve</h3>
-
-                    <p id="count"></p>
-
-                    <p id="feedback"></p>
-
-
-                    <!-- Individual Sustainability Scores -->
-
-                    <div class="category-results">
-
-                        <h3 data-en="Your Sustainability Breakdown"
-                            data-ar="نتائج الاستدامة حسب الفئة">
-
-                            Your Sustainability Breakdown
-
-                        </h3>
-
-
-                        <!-- Environmental Score -->
-
-                        <div class="category-score">
-
-                            <div class="category-score-header">
-
-                                <span data-en="🌿 Environmental"
-                                      data-ar="🌿 الاستدامة البيئية">
-
-                                    🌿 Environmental
-
-                                </span>
-
-                                <strong id="environmental-score">0%</strong>
-
-                            </div>
-
-                            <div class="track">
-
-                                <div id="environmental-bar"
-                                     style="width:0%; background:#91d86b">
-
-                                </div>
-
-                            </div>
-
-                            <p id="environmental-count"></p>
-
-                        </div>
-
-
-                        <!-- Economic Score -->
-
-                        <div class="category-score">
-
-                            <div class="category-score-header">
-
-                                <span data-en="📈 Economic"
-                                      data-ar="📈 الاستدامة الاقتصادية">
-
-                                    📈 Economic
-
-                                </span>
-
-                                <strong id="economic-score">0%</strong>
-
-                            </div>
-
-                            <div class="track">
-
-                                <div id="economic-bar"
-                                     style="width:0%; background:#eacb67">
-
-                                </div>
-
-                            </div>
-
-                            <p id="economic-count"></p>
-
-                        </div>
-
-
-                        <!-- Social Score -->
-
-                        <div class="category-score">
-
-                            <div class="category-score-header">
-
-                                <span data-en="🤝 Social"
-                                      data-ar="🤝 الاستدامة الاجتماعية">
-
-                                    🤝 Social
-
-                                </span>
-
-                                <strong id="social-score">0%</strong>
-
-                            </div>
-
-                            <div class="track">
-
-                                <div id="social-bar"
-                                     style="width:0%; background:#78c9da">
-
-                                </div>
-
-                            </div>
-
-                            <p id="social-count"></p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Personalized Recommendations -->
-
-                    <h3 data-en="Personal recommendations"
-                        data-ar="التوصيات الشخصية">
-
-                        Personal recommendations
-
-                    </h3>
-
-                    <p data-en="These recommendations are based on the habits you have not selected."
-                       data-ar="تعتمد هذه التوصيات على العادات التي لم تخترها.">
-
-                        These recommendations are based on the habits you have not selected.
-
-                    </p>
-
-                    <ul id="tips"></ul>
-
-                </section>
-
-            </div>
-
-        </section>
-
-
-        <!-- Scoring Methodology -->
-
-        <section id="methodology">
-
-            <div class="eyebrow"
-                 data-en="Understanding your results"
-                 data-ar="فهم نتائج التقييم">
-
-                Understanding your results
-
-            </div>
-
-            <h2 data-en="How Your Score Is Calculated"
-                data-ar="كيف يتم احتساب درجة الاستدامة؟">
-
-                How Your Score Is Calculated
-
-            </h2>
-
-            <p class="lead"
-               data-en="The calculator uses a transparent educational scoring method based on the three pillars of sustainability."
-               data-ar="تستخدم الحاسبة طريقة تقييم تعليمية واضحة تعتمد على الركائز الثلاث للاستدامة.">
-
-                The calculator uses a transparent educational scoring method based on the three pillars of sustainability.
+                Overall score = selected habits ÷ 12 × 100.
+                Category score = selected habits ÷ 4 × 100.
+                Each habit earns one point.
 
             </p>
 
-            <div class="grid">
-
-                <article class="tile">
-
-                    <div class="symbol">01</div>
-
-                    <h3 data-en="Habit selection"
-                        data-ar="اختيار العادات">
-
-                        Habit selection
-
-                    </h3>
-
-                    <p data-en="Each selected habit receives one point. Each unselected habit receives zero points. A maximum of 12 points is available."
-                       data-ar="تحصل كل عادة مختارة على نقطة واحدة، بينما تحصل العادات غير المختارة على صفر. ويبلغ الحد الأقصى للنقاط 12 نقطة.">
-
-                        Each selected habit receives one point. Each unselected habit receives zero points. A maximum of 12 points is available.
-
-                    </p>
-
-                </article>
-
-                <article class="tile">
-
-                    <div class="symbol">02</div>
-
-                    <h3 data-en="Category scores"
-                        data-ar="درجات الفئات">
-
-                        Category scores
-
-                    </h3>
-
-                    <p data-en="Each sustainability category contains four habits. Its percentage is calculated by dividing the number of selected habits by four and multiplying by 100."
-                       data-ar="تحتوي كل فئة من فئات الاستدامة على أربع عادات، ويتم احتساب نسبتها المئوية بقسمة عدد العادات المختارة على أربعة ثم الضرب في 100.">
-
-                        Each sustainability category contains four habits. Its percentage is calculated by dividing the number of selected habits by four and multiplying by 100.
-
-                    </p>
-
-                    <p class="fact"
-                       data-en="Category score = selected habits ÷ 4 × 100"
-                       data-ar="درجة الفئة = عدد العادات المختارة ÷ 4 × 100">
-
-                        Category score = selected habits ÷ 4 × 100
-
-                    </p>
-
-                </article>
-
-                <article class="tile">
-
-                    <div class="symbol">03</div>
-
-                    <h3 data-en="Overall Eco Score"
-                        data-ar="درجة الاستدامة الإجمالية">
-
-                        Overall Eco Score
-
-                    </h3>
-
-                    <p data-en="The overall percentage is calculated using all 12 habits. Each of the three sustainability categories contributes equally to the final result."
-                       data-ar="يتم احتساب النسبة المئوية الإجمالية باستخدام العادات الاثنتي عشرة، وتساهم كل فئة من فئات الاستدامة الثلاث بشكل متساوٍ في النتيجة النهائية.">
-
-                        The overall percentage is calculated using all 12 habits. Each of the three sustainability categories contributes equally to the final result.
-
-                    </p>
-
-                    <p class="fact"
-                       data-en="Eco Score = selected habits ÷ 12 × 100"
-                       data-ar="درجة الاستدامة = عدد العادات المختارة ÷ 12 × 100">
-
-                        Eco Score = selected habits ÷ 12 × 100
-
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Score Interpretation -->
-
-        <section id="score-interpretation">
-
-            <h2 data-en="What Does Your Score Mean?"
-                data-ar="ماذا تعني درجة استدامتك؟">
-
-                What Does Your Score Mean?
-
-            </h2>
-
-            <div class="grid">
-
-                <article class="tile">
-
-                    <span class="tag"
-                          data-en="BEGINNER"
-                          data-ar="المستوى المبتدئ">
-
-                        BEGINNER
-
-                    </span>
-
-                    <h3 style="color:#b77b35">0% – 49%</h3>
-
-                    <h3 data-en="Room to improve"
-                        data-ar="فرصة للتحسين">
-
-                        Room to improve
-
-                    </h3>
-
-                    <p data-en="You have opportunities to develop more sustainable habits. Start with simple changes such as reducing water waste and unnecessary electricity use."
-                       data-ar="لديك فرص لتطوير المزيد من العادات المستدامة. ابدأ بتغييرات بسيطة مثل تقليل هدر المياه والاستهلاك غير الضروري للكهرباء.">
-
-                        You have opportunities to develop more sustainable habits. Start with simple changes such as reducing water waste and unnecessary electricity use.
-
-                    </p>
-
-                </article>
-
-                <article class="tile">
-
-                    <span class="tag"
-                          data-en="INTERMEDIATE"
-                          data-ar="المستوى المتوسط">
-
-                        INTERMEDIATE
-
-                    </span>
-
-                    <h3 style="color:#638648">50% – 79%</h3>
-
-                    <h3 data-en="Making progress"
-                        data-ar="تقدم جيد">
-
-                        Making progress
-
-                    </h3>
-
-                    <p data-en="You already practise several sustainable habits. Focus on improving your weaker sustainability categories and maintaining consistent behaviour."
-                       data-ar="أنت تمارس بالفعل عدة عادات مستدامة. ركز على تحسين فئات الاستدامة الأقل درجة والاستمرار في ممارسة العادات الإيجابية.">
-
-                        You already practise several sustainable habits. Focus on improving your weaker sustainability categories and maintaining consistent behaviour.
-
-                    </p>
-
-                </article>
-
-                <article class="tile">
-
-                    <span class="tag"
-                          data-en="ADVANCED"
-                          data-ar="المستوى المتقدم">
-
-                        ADVANCED
-
-                    </span>
-
-                    <h3 style="color:#245a42">80% – 100%</h3>
-
-                    <h3 data-en="Eco Champion"
-                        data-ar="رائد الاستدامة">
-
-                        Eco Champion
-
-                    </h3>
-
-                    <p data-en="You demonstrate strong sustainability habits. Continue improving your lifestyle and encourage others to participate in sustainable community initiatives."
-                       data-ar="تظهر التزاماً قوياً بعادات الاستدامة. واصل تحسين نمط حياتك وشجع الآخرين على المشاركة في مبادرات الاستدامة المجتمعية.">
-
-                        You demonstrate strong sustainability habits. Continue improving your lifestyle and encourage others to participate in sustainable community initiatives.
-
-                    </p>
-
-                </article>
-
-            </div>
-
-            <p class="compare-note"
-               data-en="These score ranges are educational categories created for EcoDubai. They are not internationally validated sustainability certification levels."
-               data-ar="تم تصميم نطاقات الدرجات هذه لأغراض تعليمية خاصة بمشروع EcoDubai، ولا تمثل مستويات معتمدة دولياً لشهادات الاستدامة.">
-
-                These score ranges are educational categories created for EcoDubai. They are not internationally validated sustainability certification levels.
+            <p data-en="This educational self-assessment uses equally weighted habits and does not measure actual carbon emissions or financial savings."
+               data-ar="يستخدم هذا التقييم الذاتي التعليمي عادات متساوية الأوزان، ولا يقيس الانبعاثات الكربونية الفعلية أو الوفورات المالية.">
+
+                This educational self-assessment uses equally weighted habits
+                and does not measure actual carbon emissions or financial savings.
 
             </p>
 
-        </section>
-
-
-        <!-- Sustainable Development Goals -->
-
-        <section id="calculator-sdgs">
-
-            <div class="eyebrow"
-                 data-en="Everyday actions and global goals"
-                 data-ar="العادات اليومية والأهداف العالمية">
-
-                Everyday actions and global goals
-
-            </div>
-
-            <h2 data-en="How Your Habits Support the SDGs"
-                data-ar="كيف تدعم عاداتك أهداف التنمية المستدامة؟">
-
-                How Your Habits Support the SDGs
-
-            </h2>
-
-            <div class="grid">
-
-                <article class="tile sdg-card"
-                         style="--sdg-color:#26BDE2">
-
-                    <div class="sdg-number">06</div>
-
-                    <h3 data-en="Clean Water and Sanitation"
-                        data-ar="المياه النظيفة والنظافة الصحية">
-
-                        Clean Water and Sanitation
-
-                    </h3>
-
-                    <p data-en="Reducing water waste supports responsible water consumption and long-term water security."
-                       data-ar="يساهم تقليل هدر المياه في دعم الاستهلاك المسؤول للمياه والأمن المائي طويل الأمد.">
-
-                        Reducing water waste supports responsible water consumption and long-term water security.
-
-                    </p>
-
-                    <a href="https://sdgs.un.org/goals/goal6"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       data-en="Explore Goal 6 ↗"
-                       data-ar="استكشف الهدف السادس ↗">
-
-                        Explore Goal 6 ↗
-
-                    </a>
-
-                </article>
-
-                <article class="tile sdg-card"
-                         style="--sdg-color:#FCC30B">
-
-                    <div class="sdg-number">07</div>
-
-                    <h3 data-en="Affordable and Clean Energy"
-                        data-ar="طاقة نظيفة وبأسعار معقولة">
-
-                        Affordable and Clean Energy
-
-                    </h3>
-
-                    <p data-en="Energy-efficient appliances and responsible electricity use support improved energy efficiency."
-                       data-ar="تدعم الأجهزة الموفرة للطاقة والاستخدام المسؤول للكهرباء تحسين كفاءة استهلاك الطاقة.">
-
-                        Energy-efficient appliances and responsible electricity use support improved energy efficiency.
-
-                    </p>
-
-                    <a href="https://sdgs.un.org/goals/goal7"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       data-en="Explore Goal 7 ↗"
-                       data-ar="استكشف الهدف السابع ↗">
-
-                        Explore Goal 7 ↗
-
-                    </a>
-
-                </article>
-
-                <article class="tile sdg-card"
-                         style="--sdg-color:#FD9D24">
-
-                    <div class="sdg-number">11</div>
-
-                    <h3 data-en="Sustainable Cities and Communities"
-                        data-ar="مدن ومجتمعات محلية مستدامة">
-
-                        Sustainable Cities and Communities
-
-                    </h3>
-
-                    <p data-en="Using shared transportation and participating in community activities support more inclusive and sustainable neighbourhoods."
-                       data-ar="يدعم استخدام وسائل النقل المشتركة والمشاركة في الأنشطة المجتمعية إنشاء أحياء أكثر شمولاً واستدامة.">
-
-                        Using shared transportation and participating in community activities support more inclusive and sustainable neighbourhoods.
-
-                    </p>
-
-                    <a href="https://sdgs.un.org/goals/goal11"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       data-en="Explore Goal 11 ↗"
-                       data-ar="استكشف الهدف الحادي عشر ↗">
-
-                        Explore Goal 11 ↗
-
-                    </a>
-
-                </article>
-
-                <article class="tile sdg-card"
-                         style="--sdg-color:#BF8B2E">
-
-                    <div class="sdg-number">12</div>
-
-                    <h3 data-en="Responsible Consumption and Production"
-                        data-ar="الاستهلاك والإنتاج المسؤولان">
-
-                        Responsible Consumption and Production
-
-                    </h3>
-
-                    <p data-en="Reducing unnecessary purchases, preventing food waste and reusing products support a more circular economy."
-                       data-ar="يدعم تقليل المشتريات غير الضرورية والحد من هدر الطعام وإعادة استخدام المنتجات تحقيق اقتصاد أكثر دائرية.">
-
-                        Reducing unnecessary purchases, preventing food waste and reusing products support a more circular economy.
-
-                    </p>
-
-                    <a href="https://sdgs.un.org/goals/goal12"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       data-en="Explore Goal 12 ↗"
-                       data-ar="استكشف الهدف الثاني عشر ↗">
-
-                        Explore Goal 12 ↗
-
-                    </a>
-
-                </article>
-
-                <article class="tile sdg-card"
-                         style="--sdg-color:#3F7E44">
-
-                    <div class="sdg-number">13</div>
-
-                    <h3 data-en="Climate Action"
-                        data-ar="العمل المناخي">
-
-                        Climate Action
-
-                    </h3>
-
-                    <p data-en="Reducing energy consumption and choosing lower-emission transportation can contribute to climate change mitigation."
-                       data-ar="يمكن لتقليل استهلاك الطاقة واختيار وسائل النقل منخفضة الانبعاثات أن يساهم في التخفيف من التغير المناخي.">
-
-                        Reducing energy consumption and choosing lower-emission transportation can contribute to climate change mitigation.
-
-                    </p>
-
-                    <a href="https://sdgs.un.org/goals/goal13"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       data-en="Explore Goal 13 ↗"
-                       data-ar="استكشف الهدف الثالث عشر ↗">
-
-                        Explore Goal 13 ↗
-
-                    </a>
-
-                </article>
-
-                <article class="tile sdg-card"
-                         style="--sdg-color:#19486A">
-
-                    <div class="sdg-number">17</div>
-
-                    <h3 data-en="Partnerships for the Goals"
-                        data-ar="عقد الشراكات لتحقيق الأهداف">
-
-                        Partnerships for the Goals
-
-                    </h3>
-
-                    <p data-en="Community cooperation, environmental education and shared responsibility can support collective sustainability efforts."
-                       data-ar="يمكن للتعاون المجتمعي والتعليم البيئي والمسؤولية المشتركة أن تدعم الجهود الجماعية لتحقيق الاستدامة.">
-
-                        Community cooperation, environmental education and shared responsibility can support collective sustainability efforts.
-
-                    </p>
-
-                    <a href="https://sdgs.un.org/goals/goal17"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       data-en="Explore Goal 17 ↗"
-                       data-ar="استكشف الهدف السابع عشر ↗">
-
-                        Explore Goal 17 ↗
-
-                    </a>
-
-                </article>
-
-            </div>
-
-            <p>
-
-                <a href="https://sdgs.un.org/goals"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   data-en="Source: United Nations Sustainable Development Goals ↗"
-                   data-ar="المصدر: أهداف الأمم المتحدة للتنمية المستدامة ↗">
-
-                    Source: United Nations Sustainable Development Goals ↗
-
-                </a>
-
-            </p>
-
-        </section>
-
-
-        <!-- Academic Limitations -->
-
-        <section id="limitations" class="tile">
-
-            <h3 data-en="Academic Methodology and Limitations"
-                data-ar="المنهجية الأكاديمية وحدود التقييم">
-
-                Academic Methodology and Limitations
-
-            </h3>
-
-            <p data-en="The Eco Impact Calculator is an educational self-assessment tool developed for the SUST101 and SUST103 courses. It evaluates selected behaviours across the environmental, economic and social dimensions of sustainability."
-               data-ar="حاسبة أثر الاستدامة هي أداة تقييم ذاتي تعليمية تم تطويرها لمساقي SUST101 وSUST103، وتقيم السلوكيات المختارة ضمن الأبعاد البيئية والاقتصادية والاجتماعية للاستدامة.">
-
-                The Eco Impact Calculator is an educational self-assessment tool developed for the SUST101 and SUST103 courses. It evaluates selected behaviours across the environmental, economic and social dimensions of sustainability.
-
-            </p>
-
-            <p data-en="All habits are equally weighted to provide a simple and transparent assessment. In reality, different activities may have different levels of environmental, economic and social impact."
-               data-ar="تم منح جميع العادات أوزاناً متساوية لتوفير تقييم بسيط وواضح، بينما قد تختلف الأنشطة في الواقع من حيث مستويات تأثيرها البيئي والاقتصادي والاجتماعي.">
-
-                All habits are equally weighted to provide a simple and transparent assessment. In reality, different activities may have different levels of environmental, economic and social impact.
-
-            </p>
-
-            <p data-en="The results depend on self-reported behaviour and do not account for household size, travel distance, electricity consumption or local infrastructure."
-               data-ar="تعتمد النتائج على السلوكيات التي يحددها المستخدم بنفسه، ولا تأخذ في الاعتبار حجم الأسرة أو مسافات التنقل أو استهلاك الكهرباء أو البنية التحتية المحلية.">
-
-                The results depend on self-reported behaviour and do not account for household size, travel distance, electricity consumption or local infrastructure.
-
-            </p>
-
-            <p class="fact"
-               data-en="Important: This calculator does not measure actual carbon emissions, financial savings or environmental performance. Its purpose is to encourage sustainability awareness, reflection and positive behavioural change."
-               data-ar="ملاحظة مهمة: لا تقيس هذه الحاسبة الانبعاثات الكربونية الفعلية أو الوفورات المالية أو الأداء البيئي، وإنما تهدف إلى تعزيز الوعي بالاستدامة والتأمل وتشجيع التغيير السلوكي الإيجابي.">
-
-                Important: This calculator does not measure actual carbon emissions, financial savings or environmental performance. Its purpose is to encourage sustainability awareness, reflection and positive behavioural change.
-
-            </p>
-
-        </section>
-
-
-        <!-- Call to Action -->
-
-        <section class="tile cta">
-
-            <div class="eyebrow"
-                 data-en="Keep learning"
-                 data-ar="واصل التعلم">
-
-                Keep learning
-
-            </div>
-
-            <h2 data-en="Small Habits. Sustainable Future."
-                data-ar="عادات بسيطة ومستقبل مستدام">
-
-                Small Habits. Sustainable Future.
-
-            </h2>
-
-            <p data-en="Explore environmental challenges and sustainable community solutions to understand how individual actions can contribute to wider sustainability goals."
-               data-ar="استكشف التحديات البيئية وحلول المجتمعات المستدامة لفهم كيفية مساهمة الأفعال الفردية في تحقيق أهداف الاستدامة الأوسع.">
-
-                Explore environmental challenges and sustainable community solutions to understand how individual actions can contribute to wider sustainability goals.
-
-            </p>
-
-            <a class="btn"
-               href="environment.html"
-               data-en="Explore Environment →"
-               data-ar="استكشف الاستدامة البيئية ←">
-
-                Explore Environment →
+            <a href="https://sdgs.un.org/goals"
+               target="_blank"
+               rel="noopener noreferrer"
+               data-en="United Nations Sustainable Development Goals ↗"
+               data-ar="أهداف الأمم المتحدة للتنمية المستدامة ↗">
+
+                United Nations Sustainable Development Goals ↗
 
             </a>
 
-            <a class="btn"
-               href="communities.html"
-               data-en="Explore Communities →"
-               data-ar="استكشف المجتمعات المستدامة ←">
-
-                Explore Communities →
-
-            </a>
-
-        </section>
+        </div>
 
 
         <!-- Calculator JavaScript -->
@@ -1178,57 +548,57 @@
 
                     en: [
 
-                        "Separate paper, plastic, glass and other accepted recyclables according to local collection rules.",
+                        "Separate accepted recyclable materials.",
 
-                        "Reduce shower duration, repair water leaks and use water-efficient fixtures.",
+                        "Take shorter showers and repair water leaks.",
 
-                        "Carry reusable bags, bottles and containers instead of single-use plastics.",
+                        "Carry reusable bags and bottles.",
 
-                        "Switch off unnecessary lighting and electrical devices when they are not being used.",
+                        "Switch off unnecessary electrical devices.",
 
-                        "Choose energy-efficient appliances and maintain air conditioning systems regularly.",
+                        "Choose energy-efficient appliances.",
 
-                        "Plan your purchases and avoid buying products that you do not need.",
+                        "Avoid unnecessary purchases.",
 
-                        "Repair, donate or reuse products before deciding to replace them.",
+                        "Repair or reuse products before replacing them.",
 
-                        "Plan meals, store food correctly and avoid purchasing more food than necessary.",
+                        "Plan meals and avoid wasting food.",
 
-                        "Consider using Dubai Metro, buses or carpooling when suitable for your journey.",
+                        "Try the Metro, buses or carpooling when practical.",
 
-                        "Participate in local environmental campaigns, clean-up events or community gardening initiatives.",
+                        "Participate in local sustainability initiatives.",
 
-                        "Share sustainability knowledge and encourage your family and friends to develop responsible habits.",
+                        "Encourage family and friends to practise sustainable habits.",
 
-                        "Protect public parks, avoid littering and respect shared community facilities."
+                        "Keep public spaces clean and protect greenery."
 
                     ],
 
                     ar: [
 
-                        "افرز الورق والبلاستيك والزجاج والمواد الأخرى القابلة لإعادة التدوير وفقاً لتعليمات جمع النفايات المحلية.",
+                        "افرز المواد القابلة لإعادة التدوير.",
 
-                        "قلل مدة الاستحمام وأصلح تسربات المياه واستخدم التجهيزات الموفرة للمياه.",
+                        "قلل مدة الاستحمام وأصلح تسربات المياه.",
 
-                        "استخدم الأكياس والزجاجات والعبوات القابلة لإعادة الاستخدام بدلاً من البلاستيك أحادي الاستخدام.",
+                        "استخدم الأكياس والزجاجات القابلة لإعادة الاستخدام.",
 
-                        "أطفئ الإضاءة والأجهزة الكهربائية غير الضرورية عند عدم استخدامها.",
+                        "أطفئ الأجهزة الكهربائية غير الضرورية.",
 
-                        "اختر الأجهزة الموفرة للطاقة واحرص على الصيانة الدورية لأنظمة التكييف.",
+                        "اختر الأجهزة الموفرة للطاقة.",
 
-                        "خطط لمشترياتك وتجنب شراء المنتجات التي لا تحتاج إليها.",
+                        "تجنب المشتريات غير الضرورية.",
 
-                        "أصلح المنتجات أو تبرع بها أو أعد استخدامها قبل اتخاذ قرار استبدالها.",
+                        "أصلح المنتجات أو أعد استخدامها قبل استبدالها.",
 
-                        "خطط لوجباتك واحفظ الطعام بطريقة صحيحة وتجنب شراء كميات تزيد على احتياجاتك.",
+                        "خطط للوجبات وتجنب هدر الطعام.",
 
-                        "استخدم مترو دبي أو الحافلات أو شارك السيارة مع الآخرين عندما يكون ذلك مناسباً لرحلتك.",
+                        "استخدم المترو أو الحافلات أو شارك السيارة عندما يكون ذلك ممكناً.",
 
-                        "شارك في الحملات البيئية المحلية أو أنشطة التنظيف أو مبادرات الحدائق المجتمعية.",
+                        "شارك في مبادرات الاستدامة المحلية.",
 
-                        "شارك المعرفة المتعلقة بالاستدامة وشجع أفراد الأسرة والأصدقاء على تطوير العادات المسؤولة.",
+                        "شجع الأسرة والأصدقاء على ممارسة العادات المستدامة.",
 
-                        "حافظ على الحدائق العامة وتجنب رمي النفايات واحترم المرافق المجتمعية المشتركة."
+                        "حافظ على نظافة الأماكن العامة واحمِ المساحات الخضراء."
 
                     ]
 
@@ -1245,23 +615,11 @@
 
                         advanced: "Eco Champion",
 
-                        beginnerFeedback:
-                            "Start with small changes in your everyday routine. Every sustainable habit counts.",
-
-                        intermediateFeedback:
-                            "You are developing positive sustainability habits. Focus on improving your lowest-scoring category.",
-
-                        advancedFeedback:
-                            "You demonstrate strong sustainability habits. Continue your progress and encourage others to participate.",
-
                         complete:
-                            "Excellent! You selected all 12 habits. Keep practising them consistently and encourage others.",
+                            "Excellent! Keep practising your sustainable habits and encourage others.",
 
-                        count: (selected, total) =>
-                            selected + " of " + total + " habits selected",
-
-                        categoryCount: (selected, total) =>
-                            selected + " of " + total + " habits"
+                        count: (n, total) =>
+                            n + " of " + total + " habits selected"
 
                     },
 
@@ -1273,23 +631,11 @@
 
                         advanced: "رائد الاستدامة",
 
-                        beginnerFeedback:
-                            "ابدأ بتغييرات بسيطة في روتينك اليومي، فكل عادة مستدامة تحدث فرقاً.",
-
-                        intermediateFeedback:
-                            "أنت تطور عادات إيجابية في الاستدامة. ركز على تحسين الفئة التي حصلت فيها على أقل درجة.",
-
-                        advancedFeedback:
-                            "تظهر التزاماً قوياً بعادات الاستدامة. واصل تقدمك وشجع الآخرين على المشاركة.",
-
                         complete:
-                            "ممتاز! لقد اخترت جميع العادات الاثنتي عشرة. استمر في ممارستها بانتظام وشجع الآخرين.",
+                            "ممتاز! استمر في ممارسة العادات المستدامة وشجع الآخرين.",
 
-                        count: (selected, total) =>
-                            "العادات المختارة: " + selected + " من أصل " + total,
-
-                        categoryCount: (selected, total) =>
-                            selected + " من أصل " + total + " عادات"
+                        count: (n, total) =>
+                            "العادات المختارة: " + n + " من أصل " + total
 
                     }
 
@@ -1316,33 +662,27 @@
                 ];
 
 
-                function getLanguage() {
-
-                    return document.documentElement.lang
-                        .toLowerCase()
-                        .startsWith("ar") ? "ar" : "en";
-
-                }
-
-
                 function updateCalculator() {
 
-                    const language = getLanguage();
+                    const language =
+                        document.documentElement.lang.startsWith("ar")
+                        ? "ar"
+                        : "en";
 
                     const text = messages[language];
 
-                    const selected = boxes.filter(
+                    const n = boxes.filter(
                         box => box.checked
                     ).length;
 
                     const total = boxes.length;
 
                     const score = Math.round(
-                        selected / total * 100
+                        n / total * 100
                     );
 
 
-                    // Update overall score
+                    // Overall score
 
                     document.getElementById("score").textContent =
                         score + "%";
@@ -1351,43 +691,23 @@
                         score + "%";
 
                     document.getElementById("count").textContent =
-                        text.count(selected, total);
+                        text.count(n, total);
 
 
-                    // Determine sustainability level
-
-                    let level;
-
-                    let feedback;
-
-                    if (score < 50) {
-
-                        level = text.beginner;
-
-                        feedback = text.beginnerFeedback;
-
-                    } else if (score < 80) {
-
-                        level = text.intermediate;
-
-                        feedback = text.intermediateFeedback;
-
-                    } else {
-
-                        level = text.advanced;
-
-                        feedback = text.advancedFeedback;
-
-                    }
+                    // Sustainability level
 
                     document.getElementById("level").textContent =
-                        level;
 
-                    document.getElementById("feedback").textContent =
-                        feedback;
+                        score < 50
+                        ? text.beginner
+
+                        : score < 80
+                        ? text.intermediate
+
+                        : text.advanced;
 
 
-                    // Calculate individual category scores
+                    // Individual category scores
 
                     categories.forEach(category => {
 
@@ -1399,10 +719,8 @@
                             box => box.checked
                         ).length;
 
-                        const categoryTotal = categoryBoxes.length;
-
                         const categoryScore = Math.round(
-                            categorySelected / categoryTotal * 100
+                            categorySelected / categoryBoxes.length * 100
                         );
 
                         document.getElementById(
@@ -1413,17 +731,10 @@
                             category + "-bar"
                         ).style.width = categoryScore + "%";
 
-                        document.getElementById(
-                            category + "-count"
-                        ).textContent = text.categoryCount(
-                            categorySelected,
-                            categoryTotal
-                        );
-
                     });
 
 
-                    // Generate personalized recommendations
+                    // Personalized recommendations
 
                     const list = document.getElementById("tips");
 
@@ -1445,9 +756,9 @@
                     });
 
 
-                    // All habits completed
+                    // All habits selected
 
-                    if (selected === total) {
+                    if (n === total) {
 
                         const li = document.createElement("li");
 
@@ -1460,7 +771,7 @@
                 }
 
 
-                // Update when a habit is selected
+                // Update when a checkbox changes
 
                 boxes.forEach(box => {
 
@@ -1472,34 +783,31 @@
                 });
 
 
-                // Reset assessment
+                // Reset calculator
 
-                document.getElementById("reset").addEventListener(
-                    "click",
-                    () => {
+                document.getElementById("reset").onclick = () => {
 
-                        boxes.forEach(box => {
+                    boxes.forEach(box => {
 
-                            box.checked = false;
+                        box.checked = false;
 
-                        });
-
-                        updateCalculator();
-
-                    }
-                );
-
-
-                // Update dynamic results when language changes
-
-                const languageObserver = new MutationObserver(() => {
+                    });
 
                     updateCalculator();
 
-                });
+                };
+
+
+                // Update results when language changes
+
+                const languageObserver = new MutationObserver(
+                    updateCalculator
+                );
 
                 languageObserver.observe(
+
                     document.documentElement,
+
                     {
 
                         attributes: true,
@@ -1507,18 +815,11 @@
                         attributeFilter: ["lang"]
 
                     }
+
                 );
 
 
-                // Shared language script compatibility
-
-                document.addEventListener(
-                    "languagechange",
-                    updateCalculator
-                );
-
-
-                // Initial calculator results
+                // Initial results
 
                 updateCalculator();
 
@@ -1531,7 +832,7 @@
     <footer>
 
         <span data-en="EcoDubai · Your Actions. Our Future."
-              data-ar="EcoDubai · أفعالنا اليوم. مستقبلنا غداً.">
+              data-ar="EcoDubai · أفعالك اليوم. مستقبلنا غداً.">
 
             EcoDubai · Your Actions. Our Future.
 
