@@ -12,6 +12,31 @@
 
     <script defer src="motion.js"></script>
     <script defer src="language.js"></script>
+
+    <style>
+
+        /* Remove course card arrows */
+
+        .course-card::after,
+        html[lang="ar"] .course-card::after {
+            content: none !important;
+            display: none !important;
+        }
+
+        .course-card .tag {
+            padding-inline-end: 0;
+        }
+
+
+        /* Darker hero eyebrow */
+
+        .hero .eyebrow {
+            color: #6f8432;
+            font-weight: 800;
+        }
+
+    </style>
+
 </head>
 
 <body data-page="index">
@@ -76,12 +101,20 @@
                 <h1>
 
                     <span data-en="Your actions."
-                          data-ar="أفعالك اليوم.">Your actions.</span>
+                          data-ar="أفعالك اليوم.">
+
+                        Your actions.
+
+                    </span>
 
                     <br/>
 
                     <em data-en="Our future."
-                        data-ar="مستقبلنا غداً.">Our future.</em>
+                        data-ar="مستقبلنا غداً.">
+
+                        Our future.
+
+                    </em>
 
                 </h1>
 
@@ -94,10 +127,10 @@
 
                 <a class="btn"
                    href="calculator.html"
-                   data-en="Find your Eco Score ↗"
-                   data-ar="احسب درجة استدامتك ↗">
+                   data-en="Find your Eco Score"
+                   data-ar="احسب درجة استدامتك">
 
-                    Find your Eco Score ↗
+                    Find your Eco Score
 
                 </a>
 
@@ -112,6 +145,9 @@
 
             </div>
 
+
+            <!-- Five Scene Buttons -->
+
             <div aria-label="Choose a scene" class="hero-controls">
 
                 <button aria-pressed="true"
@@ -121,7 +157,11 @@
                     01
 
                     <span data-en="Our Future"
-                          data-ar="مستقبلنا">Our Future</span>
+                          data-ar="مستقبلنا">
+
+                        Our Future
+
+                    </span>
 
                 </button>
 
@@ -131,7 +171,11 @@
                     02
 
                     <span data-en="Today's Community"
-                          data-ar="مجتمع اليوم">Today's Community</span>
+                          data-ar="مجتمع اليوم">
+
+                        Today's Community
+
+                    </span>
 
                 </button>
 
@@ -141,7 +185,11 @@
                     03
 
                     <span data-en="Tomorrow's Community"
-                          data-ar="مجتمع الغد">Tomorrow's Community</span>
+                          data-ar="مجتمع الغد">
+
+                        Tomorrow's Community
+
+                    </span>
 
                 </button>
 
@@ -151,7 +199,11 @@
                     04
 
                     <span data-en="Environmental issues"
-                          data-ar="القضايا البيئية">Environmental issues</span>
+                          data-ar="القضايا البيئية">
+
+                        Environmental issues
+
+                    </span>
 
                 </button>
 
@@ -161,7 +213,11 @@
                     05
 
                     <span data-en="Greener Environment"
-                          data-ar="بيئة أكثر استدامة">Greener Environment</span>
+                          data-ar="بيئة أكثر استدامة">
+
+                        Greener Environment
+
+                    </span>
 
                 </button>
 
@@ -348,7 +404,7 @@
         </section>
 
 
-        <!-- Original Course Cards -->
+        <!-- Course Cards -->
 
         <section id="explore">
 
@@ -380,10 +436,10 @@
                     </p>
 
                     <a href="environment.html"
-                       data-en="Explore Environment →"
-                       data-ar="استكشف الاستدامة البيئية ←">
+                       data-en="Explore Environment"
+                       data-ar="استكشف الاستدامة البيئية">
 
-                        Explore Environment →
+                        Explore Environment
 
                     </a>
 
@@ -408,10 +464,10 @@
                     </p>
 
                     <a href="communities.html"
-                       data-en="Explore Communities →"
-                       data-ar="استكشف المجتمعات المستدامة ←">
+                       data-en="Explore Communities"
+                       data-ar="استكشف المجتمعات المستدامة">
 
-                        Explore Communities →
+                        Explore Communities
 
                     </a>
 
@@ -422,7 +478,7 @@
         </section>
 
 
-        <!-- Compact SDG Section -->
+        <!-- Sustainable Development Goals -->
 
         <section id="sdgs">
 
@@ -538,7 +594,7 @@
     <footer>
 
         <span data-en="EcoDubai · Your Actions. Our Future."
-              data-ar="EcoDubai · أفعالنا اليوم. مستقبلنا غداً.">
+              data-ar="EcoDubai · أفعالك اليوم. مستقبلنا غداً.">
 
             EcoDubai · Your Actions. Our Future.
 
