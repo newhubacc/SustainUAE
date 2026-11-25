@@ -1,124 +1,492 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width,initial-scale=1" name="viewport"/>
+
     <title>Home | EcoDubai</title>
+
     <link href="style.css" rel="stylesheet"/>
+
     <script defer="" src="motion.js"></script>
+    <script defer="" src="language.js"></script>
 </head>
 
 <body data-page="index">
 
     <header>
+
         <nav aria-label="Main navigation">
+
             <a class="brand" href="index.html">Eco<span>Dubai.</span></a>
-            <a aria-current="page" href="index.html">Home</a>
-            <a href="environment.html">Environment</a>
-            <a href="communities.html">Communities</a>
-            <a href="calculator.html">Eco Calculator</a>
-            <a href="references.html">References</a>
+
+            <a aria-current="page" href="index.html"
+               data-en="Home"
+               data-ar="الرئيسية">Home</a>
+
+            <a href="environment.html"
+               data-en="Environment"
+               data-ar="البيئة">Environment</a>
+
+            <a href="communities.html"
+               data-en="Communities"
+               data-ar="المجتمعات">Communities</a>
+
+            <a href="calculator.html"
+               data-en="Eco Calculator"
+               data-ar="حاسبة الاستدامة">Eco Calculator</a>
+
+            <a href="references.html"
+               data-en="References"
+               data-ar="المراجع">References</a>
+
+            <button class="language-toggle" id="language-toggle" type="button">
+                🌐 العربية
+            </button>
+
         </nav>
+
     </header>
 
     <main>
 
         <div class="hero cinema">
-<img alt="Concept of a greener Dubai skyline" class="hero-image" src="hero.jpg" onerror="this.onerror=null;this.src='sustainable.jpg'"/>
+
+            <img alt="Concept of a greener Dubai skyline"
+                 class="hero-image"
+                 src="hero.jpg"
+                 onerror="this.onerror=null;this.src='sustainable.jpg'"/>
 
             <div class="hero-content">
 
-                <div class="eyebrow">
-                    ✳   A greener tomorrow starts today / Dubai, UAE
+                <div class="eyebrow"
+                     data-en="✳ A greener tomorrow starts today / Dubai, UAE"
+                     data-ar="✳ غد أكثر استدامة يبدأ اليوم / دبي، الإمارات">
+
+                    ✳ A greener tomorrow starts today / Dubai, UAE
+
                 </div>
 
-                <h1>Your actions.<br/><em>Our future.</em></h1>
+                <h1>
 
-                <p>
+                    <span data-en="Your actions."
+                          data-ar="أفعالنا اليوم.">Your actions.</span>
+
+                    <br/>
+
+                    <em data-en="Our future."
+                        data-ar="مستقبلنا غداً.">Our future.</em>
+
+                </h1>
+
+                <p data-en="Discover how the choices we make today can transform Dubai into a healthier, more sustainable city."
+                   data-ar="اكتشف كيف يمكن لخياراتنا اليوم أن تجعل دبي مدينة أكثر صحة واستدامة.">
+
                     Discover how the choices we make today can transform Dubai into a healthier, more sustainable city.
+
                 </p>
 
-                <a class="btn" href="calculator.html">Find your Eco Score ↗</a>
+                <a class="btn"
+                   href="calculator.html"
+                   data-en="Find your Eco Score ↗"
+                   data-ar="احسب درجة استدامتك ↗">
 
-                <a class="btn secondary" href="environment.html">Explore the issues</a>
+                    Find your Eco Score ↗
+
+                </a>
+
+                <a class="btn secondary"
+                   href="environment.html"
+                   data-en="Explore the issues"
+                   data-ar="استكشف القضايا البيئية">
+
+                    Explore the issues
+
+                </a>
 
             </div>
 
             <div aria-label="Choose a scene" class="hero-controls">
 
-    <button aria-pressed="true" class="active" data-scene="hero">
-        01 <span>Our Future</span>
-    </button>
+                <button aria-pressed="true"
+                        class="active"
+                        data-scene="hero">
 
-    <button aria-pressed="false" data-scene="conventional">
-        02 <span>Today's Community</span>
-    </button>
+                    01
 
-    <button aria-pressed="false" data-scene="sustainable">
-        03 <span>Tomorrow's Community</span>
-    </button>
+                    <span data-en="Our Future"
+                          data-ar="مستقبلنا">Our Future</span>
 
-    <button aria-pressed="false" data-scene="environment-before">
-        04 <span>Environmental issues</span>
-    </button>
+                </button>
 
-    <button aria-pressed="false" data-scene="environment-after">
-        05 <span>Greener Environment</span>
-    </button>
+                <button aria-pressed="false"
+                        data-scene="conventional">
 
-</div>
-            <a class="scroll-cue" href="#explore">↓ <span>Scroll to explore</span></a>
+                    02
+
+                    <span data-en="Today's Community"
+                          data-ar="مجتمع اليوم">Today's Community</span>
+
+                </button>
+
+                <button aria-pressed="false"
+                        data-scene="sustainable">
+
+                    03
+
+                    <span data-en="Tomorrow's Community"
+                          data-ar="مجتمع الغد">Tomorrow's Community</span>
+
+                </button>
+
+                <button aria-pressed="false"
+                        data-scene="environment-before">
+
+                    04
+
+                    <span data-en="Environmental issues"
+                          data-ar="القضايا البيئية">Environmental issues</span>
+
+                </button>
+
+                <button aria-pressed="false"
+                        data-scene="environment-after">
+
+                    05
+
+                    <span data-en="Greener Environment"
+                          data-ar="بيئة أكثر استدامة">Greener Environment</span>
+
+                </button>
+
+            </div>
+
+            <a class="scroll-cue" href="#explore">
+
+                ↓
+
+                <span data-en="Scroll to explore"
+                      data-ar="مرر للأسفل للاستكشاف">
+
+                    Scroll to explore
+
+                </span>
+
+            </a>
 
         </div>
 
         <div class="metric-strip">
 
             <div>
+
                 <strong>12</strong>
-                <span>Sustainability topics</span>
+
+                <span data-en="Sustainability topics"
+                      data-ar="موضوعاً في الاستدامة">
+
+                    Sustainability topics
+
+                </span>
+
             </div>
 
             <div>
+
                 <strong>02</strong>
-                <span>Perspectives, one future</span>
+
+                <span data-en="Perspectives, one future"
+                      data-ar="منظوران لمستقبل واحد">
+
+                    Perspectives, one future
+
+                </span>
+
             </div>
 
             <div>
+
                 <strong>06</strong>
-                <span>Habits to start today</span>
+
+                <span data-en="Habits to start today"
+                      data-ar="عادات يمكنك البدء بها اليوم">
+
+                    Habits to start today
+
+                </span>
+
             </div>
 
         </div>
 
+
+        <!-- Sustainability Statistics -->
+
+        <section id="statistics">
+
+            <div class="eyebrow"
+                 data-en="Real data. Real progress."
+                 data-ar="بيانات حقيقية وتقدم ملموس">
+
+                Real data. Real progress.
+
+            </div>
+
+            <h2 data-en="Sustainability in Numbers"
+                data-ar="الاستدامة بالأرقام">
+
+                Sustainability in Numbers
+
+            </h2>
+
+            <p class="lead"
+               data-en="Official statistics demonstrate Dubai's progress in clean energy, sustainable transportation and responsible waste management."
+               data-ar="توضح الإحصائيات الرسمية تقدم دبي في مجالات الطاقة النظيفة والنقل المستدام والإدارة المسؤولة للنفايات.">
+
+                Official statistics demonstrate Dubai's progress in clean energy, sustainable transportation and responsible waste management.
+
+            </p>
+
+            <div class="grid statistics-grid">
+
+                <article class="tile statistic-card">
+
+                    <div class="symbol">☀</div>
+
+                    <span class="tag"
+                          data-en="Clean energy"
+                          data-ar="الطاقة النظيفة">
+
+                        Clean energy
+
+                    </span>
+
+                    <h3 class="stat-number">2,860 MW</h3>
+
+                    <p data-en="The Mohammed bin Rashid Al Maktoum Solar Park reached a production capacity of 2,860 MW, as reported by DEWA in September 2024."
+                       data-ar="بلغت القدرة الإنتاجية لمجمع محمد بن راشد آل مكتوم للطاقة الشمسية 2,860 ميغاواط، وفقاً لبيانات هيئة كهرباء ومياه دبي في سبتمبر 2024.">
+
+                        The Mohammed bin Rashid Al Maktoum Solar Park reached a production capacity of 2,860 MW, as reported by DEWA in September 2024.
+
+                    </p>
+
+                    <p class="fact"
+                       data-en="Related goals: SDG 7 and SDG 13"
+                       data-ar="الأهداف المرتبطة: الهدف 7 والهدف 13">
+
+                        Related goals: SDG 7 and SDG 13
+
+                    </p>
+
+                    <a href="https://www.dewa.gov.ae/en/about-us/media-publications/latest-news/2024/09/wetex-2024-brings-together-companies-that-support"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Official source: DEWA, 2024 ↗"
+                       data-ar="المصدر الرسمي: هيئة كهرباء ومياه دبي، 2024 ↗">
+
+                        Official source: DEWA, 2024 ↗
+
+                    </a>
+
+                </article>
+
+                <article class="tile statistic-card">
+
+                    <div class="symbol">🚇</div>
+
+                    <span class="tag"
+                          data-en="Sustainable transportation"
+                          data-ar="النقل المستدام">
+
+                        Sustainable transportation
+
+                    </span>
+
+                    <h3 class="stat-number"
+                        data-en="747.1 million"
+                        data-ar="747.1 مليون">
+
+                        747.1 million
+
+                    </h3>
+
+                    <p data-en="Dubai recorded 747.1 million passenger journeys across public transport, shared mobility and taxis in 2024, an increase of 6.4% compared with 2023."
+                       data-ar="سجلت دبي 747.1 مليون رحلة للركاب عبر وسائل النقل العام والتنقل المشترك وسيارات الأجرة خلال عام 2024، بزيادة قدرها 6.4% مقارنة بعام 2023.">
+
+                        Dubai recorded 747.1 million passenger journeys across public transport, shared mobility and taxis in 2024, an increase of 6.4% compared with 2023.
+
+                    </p>
+
+                    <p class="fact"
+                       data-en="Related goals: SDG 11 and SDG 13"
+                       data-ar="الأهداف المرتبطة: الهدف 11 والهدف 13">
+
+                        Related goals: SDG 11 and SDG 13
+
+                    </p>
+
+                    <a href="https://rta.ae/wps/portal/rta/ae/home/news-and-media/all-news/NewsDetails/747-million-riders-used-public-transport-shared-mobility-and-taxis-in-2024"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Official source: RTA, 2024 data ↗"
+                       data-ar="المصدر الرسمي: هيئة الطرق والمواصلات، بيانات 2024 ↗">
+
+                        Official source: RTA, 2024 data ↗
+
+                    </a>
+
+                </article>
+
+                <article class="tile statistic-card">
+
+                    <div class="symbol">♻</div>
+
+                    <span class="tag"
+                          data-en="Waste management"
+                          data-ar="إدارة النفايات">
+
+                        Waste management
+
+                    </span>
+
+                    <h3 class="stat-number"
+                        data-en="1.9 million"
+                        data-ar="1.9 مليون">
+
+                        1.9 million
+
+                    </h3>
+
+                    <p data-en="Dubai Municipality reported in 2025 that the Warsan Waste-to-Energy Centre processes 1.9 million tonnes of waste annually and produces 220 MW of electricity."
+                       data-ar="أفادت بلدية دبي في عام 2025 بأن مركز تحويل النفايات إلى طاقة في ورسان يعالج 1.9 مليون طن من النفايات سنوياً وينتج 220 ميغاواط من الكهرباء.">
+
+                        Dubai Municipality reported in 2025 that the Warsan Waste-to-Energy Centre processes 1.9 million tonnes of waste annually and produces 220 MW of electricity.
+
+                    </p>
+
+                    <p class="fact"
+                       data-en="Related goals: SDG 7, SDG 11 and SDG 12"
+                       data-ar="الأهداف المرتبطة: الهدف 7 والهدف 11 والهدف 12">
+
+                        Related goals: SDG 7, SDG 11 and SDG 12
+
+                    </p>
+
+                    <a href="https://www.dm.gov.ae/flagship-sustainable-infrastructure-projects-at-wetex-2025/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Official source: Dubai Municipality, 2025 ↗"
+                       data-ar="المصدر الرسمي: بلدية دبي، 2025 ↗">
+
+                        Official source: Dubai Municipality, 2025 ↗
+
+                    </a>
+
+                </article>
+
+            </div>
+
+            <p class="compare-note"
+               data-en="Figures represent the stated reporting periods and are not live measurements."
+               data-ar="تمثل الأرقام الفترات الزمنية المحددة في المصادر، وليست قياسات مباشرة أو لحظية.">
+
+                Figures represent the stated reporting periods and are not live measurements.
+
+            </p>
+
+        </section>
+
+
+        <!-- Existing Course Cards -->
+
         <section id="explore">
 
-            <h2>Explore sustainability from two perspectives</h2>
+            <div class="eyebrow"
+                 data-en="Two courses. One shared future."
+                 data-ar="مساقان ومستقبل مشترك">
+
+                Two courses. One shared future.
+
+            </div>
+
+            <h2 data-en="Explore sustainability from two perspectives"
+                data-ar="استكشف الاستدامة من منظورين">
+
+                Explore sustainability from two perspectives
+
+            </h2>
 
             <div class="grid two">
 
                 <article class="tile course-card">
 
-                    <h3>Environmental Sustainability</h3>
+                    <span class="tag">SUST101</span>
 
-                    <p>
+                    <h3 data-en="Environmental Sustainability"
+                        data-ar="الاستدامة البيئية">
+
+                        Environmental Sustainability
+
+                    </h3>
+
+                    <p data-en="Understand carbon emissions, water, clean energy, waste, biodiversity and climate change."
+                       data-ar="تعرف على الانبعاثات الكربونية والمياه والطاقة النظيفة والنفايات والتنوع البيولوجي والتغير المناخي.">
+
                         Understand carbon emissions, water, clean energy, waste, biodiversity and climate change.
+
                     </p>
 
-                    <a href="environment.html">Explore Environment →</a>
+                    <p data-en="Explore scientific evidence, environmental challenges and practical solutions through real UAE case studies."
+                       data-ar="استكشف الأدلة العلمية والتحديات البيئية والحلول العملية من خلال دراسات حالة واقعية من دولة الإمارات.">
+
+                        Explore scientific evidence, environmental challenges and practical solutions through real UAE case studies.
+
+                    </p>
+
+                    <a href="environment.html"
+                       data-en="Explore Environment →"
+                       data-ar="استكشف الاستدامة البيئية ←">
+
+                        Explore Environment →
+
+                    </a>
 
                 </article>
 
                 <article class="tile course-card">
 
-                    <h3>Sustainable Communities</h3>
+                    <span class="tag">SUST103</span>
 
-                    <p>
+                    <h3 data-en="Sustainable Communities"
+                        data-ar="المجتمعات المستدامة">
+
+                        Sustainable Communities
+
+                    </h3>
+
+                    <p data-en="Discover how mobility, urban planning, buildings, recycling, gardens and shade shape everyday life."
+                       data-ar="اكتشف كيف يؤثر النقل والتخطيط الحضري والمباني وإعادة التدوير والحدائق والظل في الحياة اليومية.">
+
                         Discover how mobility, urban planning, buildings, recycling, gardens and shade shape everyday life.
+
                     </p>
 
-                    <a href="communities.html">Explore Communities →</a>
+                    <p data-en="Examine how sustainable communities balance environmental protection, economic development and social well-being."
+                       data-ar="تعرف على كيفية تحقيق المجتمعات المستدامة للتوازن بين حماية البيئة والتنمية الاقتصادية والرفاه الاجتماعي.">
+
+                        Examine how sustainable communities balance environmental protection, economic development and social well-being.
+
+                    </p>
+
+                    <a href="communities.html"
+                       data-en="Explore Communities →"
+                       data-ar="استكشف المجتمعات المستدامة ←">
+
+                        Explore Communities →
+
+                    </a>
 
                 </article>
 
@@ -126,11 +494,436 @@
 
         </section>
 
+
+        <!-- Three Pillars of Sustainability -->
+
+        <section id="pillars">
+
+            <div class="eyebrow"
+                 data-en="A balanced approach"
+                 data-ar="نهج متوازن">
+
+                A balanced approach
+
+            </div>
+
+            <h2 data-en="The Three Pillars of Sustainability"
+                data-ar="الركائز الثلاث للاستدامة">
+
+                The Three Pillars of Sustainability
+
+            </h2>
+
+            <p class="lead"
+               data-en="Sustainable development requires a balance between environmental protection, economic prosperity and social well-being."
+               data-ar="تتطلب التنمية المستدامة تحقيق التوازن بين حماية البيئة والازدهار الاقتصادي والرفاه الاجتماعي.">
+
+                Sustainable development requires a balance between environmental protection, economic prosperity and social well-being.
+
+            </p>
+
+            <div class="grid">
+
+                <article class="tile pillar-card">
+
+                    <div class="symbol">🌿</div>
+
+                    <h3 data-en="Environmental Sustainability"
+                        data-ar="الاستدامة البيئية">
+
+                        Environmental Sustainability
+
+                    </h3>
+
+                    <p data-en="Protecting natural resources, reducing pollution, conserving biodiversity and addressing climate change to preserve the environment for future generations."
+                       data-ar="حماية الموارد الطبيعية والحد من التلوث والحفاظ على التنوع البيولوجي ومواجهة التغير المناخي لضمان استدامة البيئة للأجيال القادمة.">
+
+                        Protecting natural resources, reducing pollution, conserving biodiversity and addressing climate change to preserve the environment for future generations.
+
+                    </p>
+
+                    <p class="fact"
+                       data-en="Example: Renewable energy projects and water conservation initiatives in Dubai."
+                       data-ar="مثال: مشاريع الطاقة المتجددة ومبادرات ترشيد استهلاك المياه في دبي.">
+
+                        Example: Renewable energy projects and water conservation initiatives in Dubai.
+
+                    </p>
+
+                </article>
+
+                <article class="tile pillar-card">
+
+                    <div class="symbol">📈</div>
+
+                    <h3 data-en="Economic Sustainability"
+                        data-ar="الاستدامة الاقتصادية">
+
+                        Economic Sustainability
+
+                    </h3>
+
+                    <p data-en="Supporting long-term economic development through efficient resource use, responsible investment, innovation and green employment opportunities."
+                       data-ar="دعم التنمية الاقتصادية طويلة الأمد من خلال الاستخدام الفعال للموارد والاستثمار المسؤول والابتكار وتوفير فرص العمل الخضراء.">
+
+                        Supporting long-term economic development through efficient resource use, responsible investment, innovation and green employment opportunities.
+
+                    </p>
+
+                    <p class="fact"
+                       data-en="Example: Energy-efficient buildings can reduce electricity costs and support the green economy."
+                       data-ar="مثال: يمكن للمباني الموفرة للطاقة خفض تكاليف الكهرباء ودعم الاقتصاد الأخضر.">
+
+                        Example: Energy-efficient buildings can reduce electricity costs and support the green economy.
+
+                    </p>
+
+                </article>
+
+                <article class="tile pillar-card">
+
+                    <div class="symbol">🤝</div>
+
+                    <h3 data-en="Social Sustainability"
+                        data-ar="الاستدامة الاجتماعية">
+
+                        Social Sustainability
+
+                    </h3>
+
+                    <p data-en="Promoting equality, public health, accessibility, education and community participation to improve quality of life for all residents."
+                       data-ar="تعزيز المساواة والصحة العامة وسهولة الوصول إلى الخدمات والتعليم والمشاركة المجتمعية لتحسين جودة الحياة لجميع السكان.">
+
+                        Promoting equality, public health, accessibility, education and community participation to improve quality of life for all residents.
+
+                    </p>
+
+                    <p class="fact"
+                       data-en="Example: Accessible public transportation and community green spaces can improve social inclusion."
+                       data-ar="مثال: يمكن لوسائل النقل العام الميسرة والمساحات الخضراء المجتمعية تعزيز الدمج الاجتماعي.">
+
+                        Example: Accessible public transportation and community green spaces can improve social inclusion.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+            <a href="https://sdgs.un.org/2030agenda"
+               target="_blank"
+               rel="noopener noreferrer"
+               data-en="Source: United Nations 2030 Agenda ↗"
+               data-ar="المصدر: خطة الأمم المتحدة للتنمية المستدامة لعام 2030 ↗">
+
+                Source: United Nations 2030 Agenda ↗
+
+            </a>
+
+        </section>
+
+
+        <!-- Sustainable Development Goals -->
+
+        <section id="sdgs">
+
+            <div class="eyebrow"
+                 data-en="Local actions. Global goals."
+                 data-ar="جهود محلية وأهداف عالمية">
+
+                Local actions. Global goals.
+
+            </div>
+
+            <h2 data-en="Sustainable Development Goals"
+                data-ar="أهداف التنمية المستدامة">
+
+                Sustainable Development Goals
+
+            </h2>
+
+            <p class="lead"
+               data-en="The United Nations established 17 Sustainable Development Goals in 2015 as part of the 2030 Agenda. EcoDubai focuses on goals related to environmental protection, responsible resource use and sustainable communities."
+               data-ar="اعتمدت الأمم المتحدة 17 هدفاً للتنمية المستدامة في عام 2015 ضمن خطة عام 2030. ويركز مشروع EcoDubai على الأهداف المرتبطة بحماية البيئة والاستخدام المسؤول للموارد والمجتمعات المستدامة.">
+
+                The United Nations established 17 Sustainable Development Goals in 2015 as part of the 2030 Agenda. EcoDubai focuses on goals related to environmental protection, responsible resource use and sustainable communities.
+
+            </p>
+
+            <div class="grid sdg-grid">
+
+                <article class="tile sdg-card"
+                         style="--sdg-color:#26BDE2">
+
+                    <div class="sdg-number">06</div>
+
+                    <h3 data-en="Clean Water and Sanitation"
+                        data-ar="المياه النظيفة والنظافة الصحية">
+
+                        Clean Water and Sanitation
+
+                    </h3>
+
+                    <p data-en="Encouraging water conservation and sustainable management of water resources."
+                       data-ar="تشجيع ترشيد استهلاك المياه والإدارة المستدامة للموارد المائية.">
+
+                        Encouraging water conservation and sustainable management of water resources.
+
+                    </p>
+
+                    <a href="https://sdgs.un.org/goals/goal6"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Explore Goal 6 ↗"
+                       data-ar="استكشف الهدف السادس ↗">
+
+                        Explore Goal 6 ↗
+
+                    </a>
+
+                </article>
+
+                <article class="tile sdg-card"
+                         style="--sdg-color:#FCC30B">
+
+                    <div class="sdg-number">07</div>
+
+                    <h3 data-en="Affordable and Clean Energy"
+                        data-ar="طاقة نظيفة وبأسعار معقولة">
+
+                        Affordable and Clean Energy
+
+                    </h3>
+
+                    <p data-en="Promoting renewable energy, energy efficiency and access to sustainable electricity."
+                       data-ar="تعزيز الطاقة المتجددة وكفاءة الطاقة وإمكانية الحصول على الكهرباء المستدامة.">
+
+                        Promoting renewable energy, energy efficiency and access to sustainable electricity.
+
+                    </p>
+
+                    <a href="https://sdgs.un.org/goals/goal7"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Explore Goal 7 ↗"
+                       data-ar="استكشف الهدف السابع ↗">
+
+                        Explore Goal 7 ↗
+
+                    </a>
+
+                </article>
+
+                <article class="tile sdg-card"
+                         style="--sdg-color:#FD9D24">
+
+                    <div class="sdg-number">11</div>
+
+                    <h3 data-en="Sustainable Cities and Communities"
+                        data-ar="مدن ومجتمعات محلية مستدامة">
+
+                        Sustainable Cities and Communities
+
+                    </h3>
+
+                    <p data-en="Developing inclusive, safe and resilient communities through sustainable transportation, planning and infrastructure."
+                       data-ar="تطوير مجتمعات شاملة وآمنة وقادرة على الصمود من خلال النقل والتخطيط والبنية التحتية المستدامة.">
+
+                        Developing inclusive, safe and resilient communities through sustainable transportation, planning and infrastructure.
+
+                    </p>
+
+                    <a href="https://sdgs.un.org/goals/goal11"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Explore Goal 11 ↗"
+                       data-ar="استكشف الهدف الحادي عشر ↗">
+
+                        Explore Goal 11 ↗
+
+                    </a>
+
+                </article>
+
+                <article class="tile sdg-card"
+                         style="--sdg-color:#BF8B2E">
+
+                    <div class="sdg-number">12</div>
+
+                    <h3 data-en="Responsible Consumption and Production"
+                        data-ar="الاستهلاك والإنتاج المسؤولان">
+
+                        Responsible Consumption and Production
+
+                    </h3>
+
+                    <p data-en="Reducing waste, encouraging recycling and using natural resources responsibly."
+                       data-ar="تقليل النفايات وتشجيع إعادة التدوير والاستخدام المسؤول للموارد الطبيعية.">
+
+                        Reducing waste, encouraging recycling and using natural resources responsibly.
+
+                    </p>
+
+                    <a href="https://sdgs.un.org/goals/goal12"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Explore Goal 12 ↗"
+                       data-ar="استكشف الهدف الثاني عشر ↗">
+
+                        Explore Goal 12 ↗
+
+                    </a>
+
+                </article>
+
+                <article class="tile sdg-card"
+                         style="--sdg-color:#3F7E44">
+
+                    <div class="sdg-number">13</div>
+
+                    <h3 data-en="Climate Action"
+                        data-ar="العمل المناخي">
+
+                        Climate Action
+
+                    </h3>
+
+                    <p data-en="Reducing greenhouse gas emissions and improving resilience to climate-related challenges."
+                       data-ar="الحد من انبعاثات غازات الاحتباس الحراري وتعزيز القدرة على مواجهة التحديات المناخية.">
+
+                        Reducing greenhouse gas emissions and improving resilience to climate-related challenges.
+
+                    </p>
+
+                    <a href="https://sdgs.un.org/goals/goal13"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Explore Goal 13 ↗"
+                       data-ar="استكشف الهدف الثالث عشر ↗">
+
+                        Explore Goal 13 ↗
+
+                    </a>
+
+                </article>
+
+                <article class="tile sdg-card"
+                         style="--sdg-color:#56C02B">
+
+                    <div class="sdg-number">15</div>
+
+                    <h3 data-en="Life on Land"
+                        data-ar="الحياة في البر">
+
+                        Life on Land
+
+                    </h3>
+
+                    <p data-en="Protecting terrestrial ecosystems, natural habitats and biodiversity for future generations."
+                       data-ar="حماية النظم البيئية البرية والموائل الطبيعية والتنوع البيولوجي للأجيال القادمة.">
+
+                        Protecting terrestrial ecosystems, natural habitats and biodiversity for future generations.
+
+                    </p>
+
+                    <a href="https://sdgs.un.org/goals/goal15"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       data-en="Explore Goal 15 ↗"
+                       data-ar="استكشف الهدف الخامس عشر ↗">
+
+                        Explore Goal 15 ↗
+
+                    </a>
+
+                </article>
+
+            </div>
+
+            <p>
+
+                <a href="https://sdgs.un.org/goals"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-en="View all 17 Sustainable Development Goals ↗"
+                   data-ar="اطلع على جميع أهداف التنمية المستدامة السبعة عشر ↗">
+
+                    View all 17 Sustainable Development Goals ↗
+
+                </a>
+
+            </p>
+
+        </section>
+
+
+        <!-- Take Action -->
+
+        <section class="tile cta">
+
+            <div class="eyebrow"
+                 data-en="Your actions make a difference"
+                 data-ar="أفعالك تصنع الفرق">
+
+                Your actions make a difference
+
+            </div>
+
+            <h2 data-en="Start your sustainability journey today"
+                data-ar="ابدأ رحلتك نحو الاستدامة اليوم">
+
+                Start your sustainability journey today
+
+            </h2>
+
+            <p data-en="Discover how your everyday habits contribute to environmental, economic and social sustainability. Small actions can support meaningful long-term change."
+               data-ar="اكتشف كيف تساهم عاداتك اليومية في تحقيق الاستدامة البيئية والاقتصادية والاجتماعية. يمكن للأفعال الصغيرة أن تدعم تغييرات إيجابية طويلة الأمد.">
+
+                Discover how your everyday habits contribute to environmental, economic and social sustainability. Small actions can support meaningful long-term change.
+
+            </p>
+
+            <a class="btn"
+               href="calculator.html"
+               data-en="Calculate your Eco Score ↗"
+               data-ar="احسب درجة استدامتك ↗">
+
+                Calculate your Eco Score ↗
+
+            </a>
+
+        </section>
+
     </main>
 
     <footer>
-        EcoDubai · Your Actions. Our Future.<br/>
-        Educational project • <a href="references.html">Sources &amp; credits</a>
+
+        <span data-en="EcoDubai · Your Actions. Our Future."
+              data-ar="EcoDubai · أفعالنا اليوم. مستقبلنا غداً.">
+
+            EcoDubai · Your Actions. Our Future.
+
+        </span>
+
+        <br/>
+
+        <span data-en="Educational project"
+              data-ar="مشروع تعليمي">
+
+            Educational project
+
+        </span>
+
+        •
+
+        <a href="references.html"
+           data-en="Sources &amp; credits"
+           data-ar="المصادر والمراجع">
+
+            Sources &amp; credits
+
+        </a>
+
     </footer>
 
 </body>
